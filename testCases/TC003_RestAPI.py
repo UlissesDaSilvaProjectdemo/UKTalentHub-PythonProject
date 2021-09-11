@@ -37,7 +37,6 @@ class TrelloApiTest(unittest.TestCase):
         return response.json()["id"]
 
 
-
     def create_list(self, board_id, name):  #  POST / 1 / checklists
         response = requests.post(f'https://api.trello.com/1/lists/?key={API_KEY}&token={TOKEN}',
                                  json={"idBoard": board_id, "name": name})
