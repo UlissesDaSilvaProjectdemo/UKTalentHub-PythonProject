@@ -2,8 +2,10 @@ import logging
 import requests
 import unittest
 
+
 API_KEY = '89490e1e5ab8c2a998dd7c0ab3bf67c6'
 TOKEN = '06c029430141a14f1112f8020f1ea5d51c360656a4fe579eb602e0f971efd0c2'
+
 
 class TrelloApiTest(unittest.TestCase):
 
@@ -15,8 +17,9 @@ class TrelloApiTest(unittest.TestCase):
         second_card_id = self.create_card(list_id, name="second_card")
         third_card_id = self.create_card(list_id, name="third_card")
 
-        #self.edit_Card(second_card_id)
-        #self.delete_Card()
+        self.edit_card(second_card_id, name="New Name for second card", desc='add a new description')
+        self.delete_card(third_card_id)
+        self.add_comment_to_card(first_card_id, text="Fancy new comment")
 
     def tearDown(self):
         self.delete_board(self.board_id)
@@ -28,37 +31,34 @@ class TrelloApiTest(unittest.TestCase):
         response = requests.delete(f"https://api.trello.com/1/boards/{board_id}?key={API_KEY}&token={TOKEN}")
         assert response.status_code == 200
 
-
-    def create_board(self): #POST /1/cards
+    def create_board(self):  # POST /1/boards
         response = requests.post(f'https://api.trello.com/1/boards?key={API_KEY}&token={TOKEN}',
                                  json={"name": "Plentific_Trello", "defaulList": False})
         assert response.status_code == 200
         logging.info("Created board %s", response.json())
         return response.json()["id"]
 
-
-    def create_list(self, board_id, name):  #  POST / 1 / checklists
+    def create_list(self, board_id, name):  #  POST /1/lists
         response = requests.post(f'https://api.trello.com/1/lists/?key={API_KEY}&token={TOKEN}',
                                  json={"idBoard": board_id, "name": name})
         return response.json()["id"]
 
-    def create_card(self, list_id, name):  # PUT /1/boards/{id}
+    def create_card(self, list_id, **params):  # POST /1/cards/{id}
         response = requests.post(f'https://api.trello.com/1/cards?key={API_KEY}&token={TOKEN}',
-                                 json={"name": name, "idList": list_id})
+                                 json={**{"idList": list_id}, **params})
         return response.json()["id"]
 
-    def edit_Card(self):  # PUT /1/boards/{id}
-        self.edit_Card = requests.put(f'https://api.trello.com/1/baords/{id}?key={API_KEY}&token={TOKEN}',
-                                      json={"name" "Third_Card"})
+    def edit_card(self, card_id, **params):  # PUT /1/cards/{id}
+        return requests.put(f'https://api.trello.com/1/cards/{card_id}?key={API_KEY}&token={TOKEN}',
+                            json={**{"idCard": card_id}, **params})
 
-    def comment_card(self): #PUT /1/cards/{id}
-        self.comment_Card = requests.put(f'https://api.trello.com/1/cards/{id}?key={API_KEY}&token={TOKEN}',
-                                      json={"name" "comment in the cards"})
+    def delete_card(self, card_id):  # DELETE /1/cards/{id}
+        return requests.delete(f'https://api.trello.com/1/cards/{card_id}?key={API_KEY}&token={TOKEN}')
 
+    def add_comment_to_card(self, card_id, text):  # POST /1/cards/{id}/actions/comments
+        return requests.post(f'https://api.trello.com/1/cards/{card_id}/actions/comments?key={API_KEY}&token={TOKEN}',
+                             json={'text': text})
 
-    def delete_Card(self):  # DELETE /1/boards/{id}
-        self.delete_Card = requests.post(f'https://api.trello.com/1/boards{id}?key={API_KEY}&token={TOKEN}',
-                                         json={"name" "Third_Card"})
 
 if __name__ == "__main__":
     unittest.main()
