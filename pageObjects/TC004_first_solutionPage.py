@@ -26,8 +26,8 @@ class TC004_first_solutionPage:
     verify_first_card_with_comment_xpath = "//*[@class='current-comment js-friendly-links js-open-card']"
     add_new_comment_first_card_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/div/div[4]/div[11]/div[2]/form/div/div/textarea"
 
-    img_source_element = "//*[@id='board']/div[1]/div/div[2]/a[1]"
-    img_target_element = "//*[@id='board']/div[4]/div/div[1]/textarea"
+    img_source_element_by_xpath = "//*[@id='board']/div[1]/div/div[2]/a[1]"
+    img_target_element_by_xpath = "//*[@id='board']/div[4]/div/div[1]/textarea"
 
     link_logout_linktext = "Logout"
 
@@ -116,8 +116,8 @@ class TC004_first_solutionPage:
         self.driver.find_element_by_xpath(self.close_second_card_xpath).click()
 
     def set_card_to_done(self):
-        self.driver.find_element_by_xpath(self.source_element)  # mouse over to admin
-        self.driver.find_element_by_xpath(self.target_element)  # mpuse over  to usermanagement
+        source_element=self.driver.find_element_by_xpath(self.img_source_element_by_xpath)  # mouse over to admin
+        target_element=self.driver.find_element_by_xpath(self.img_target_element_by_xpath)  # mpuse over  to usermanagement
         actions = ActionChains(driver)  # create object of action chain class
-        actions.move_to_element(self.source_element).move_to_element(self.ftarget_element).click()
+        actions.move_to_element(source_element).move_to_element(target_element).click().perform()
 

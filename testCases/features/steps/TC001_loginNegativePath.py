@@ -26,6 +26,19 @@ def step_impl(context):
     context.driver.find_element_by_id("login").click()
 
 
+@then('the user do not successfully login into the application homepage')
+def step_impl(context):
+     print("implement")
+
+@then('the user close the browser')
+
+def step_impl(context):
+     print("implement")
+
+
+
+
+
 
 
 

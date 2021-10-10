@@ -35,14 +35,15 @@ class Test_001_Login:
         self.lp.atlassian_click_login()
         self.lp.navigate_to_first_card()
         self.lp.open_first_card()
-        self.lp.verify_first_card()
-        self.lp.verify_first_card_with_comment()
         self.lp.add_new_comment_first_card()
         self.lp.close_first_card()
         self.lp.navigate_to_second_card()
-        self.lp.verify_second_card()
+        #self.lp.verify_second_card()
         self.lp.close_second_card()
+        #self.lp.verify_first_card()
+        #self.lp.verify_first_card_with_comment()
         self.lp.set_card_to_done()
+
 
         act_title = self.driver.title
         if act_title == "New Name for second card on Plentific_Trello":  # Boards | Trello
@@ -54,6 +55,8 @@ class Test_001_Login:
             self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
             self.driver.close()
             assert False
+
+
 
 
 
