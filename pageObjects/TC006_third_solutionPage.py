@@ -20,11 +20,14 @@ class TC006_third_solutionPage:
     atlassian_click_login_xpath = "//*[@id='login-submit']/span"
     navigate_to_card_xpath = "//*[@class='board-tile-details is-badged']"
     click_first_card_xpath = "//*[@id='board']/div[1]/div/div[2]/a[1]"
-    verify_firs_card_text_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/div/div[3]/div[1]/textarea"
+    verify_firs_card_text_xpath = "//title[contains(text(),'first_card on Plentific_Trello')]"
     close_first_card_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/a"
     click_second_card_xpath = "//*[@id='board']/div[1]/div/div[2]/a[2]"
     verify_second_card_text_xpath = "//title[contains(text(),'New Name for second card on Plentific_Trello')]"
     add_comment_second_card_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/div/div[4]/div[11]/div[2]/form/div/div/textarea"
+    click_open_label_xpath="//*[@class='js-sidebar-action-text']"
+
+    click_red_label_xpath="//*[@class='card-label mod-selectable card-label-ared active js-select-label']"
     close_second_card_xpath = "//a[@class='icon-md icon-close dialog-close-button js-close-window']"
     verify_first_card_with_comment_xpath = "//*[@class='current-comment js-friendly-links js-open-card']"
     add_new_comment_first_card_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/div/div[4]/div[11]/div[2]/form/div/div/textarea"
@@ -32,6 +35,10 @@ class TC006_third_solutionPage:
     target_element_xpath = "//*[@id='board']/div[4]/div/div[1]/textarea"
     click_cant_login_id = "resetPassword"
     click_return_login_xpath = "//*[@id='reset-password-email-cancel']"
+
+
+
+
     link_logout_linktext = "Logout"
 
     def __init__(self, driver):
@@ -90,20 +97,20 @@ class TC006_third_solutionPage:
     def verify_first_card(self):
         self.synchronize()
         try:
-            card_name = self.driver.find_element_by_xpath(self.verify_firs_card_text_xpath)
-            if card_name == "first_card":
+            card_name = self.driver.find_element_by_xpath(self.verify_firs_card_text_xpath).text
+            if card_name == "first_card on Plentific_Trello":
                 logger.error('Verify first card valid! (%s)', card_name)
                 assert True
             else:
                 self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
                 logger.error('Verify   first card not valid! (%s)', card_name)
         except:
-            assert False, 'first th Assertions Fails'
+            assert False, 'first card  Assertions Fails'
 
     def verify_first_card_with_comment(self):
         self.synchronize()
         try:
-            card_name = self.driver.find_element_by_xpath(self.verify_first_card_with_comment_xpath)
+            card_name = self.driver.find_element_by_xpath(self.verify_first_card_with_comment_xpath).text
             if card_name == "Fancy new comment":
                 logger.error('Verify comment card valid! (%s)', card_name)
                 assert True
@@ -123,6 +130,17 @@ class TC006_third_solutionPage:
     def navigate_to_second_card(self):
         self.synchronize()
         self.driver.find_element_by_xpath(self.click_second_card_xpath).click()
+
+
+    def click_open_label(self):
+        self.synchronize()
+        self.driver.find_element_by_xpath(self.click_open_label_xpath).click()
+
+    def click_red_label(self):
+        self.synchronize()
+        self.driver.find_element_by_xpath(self.click_red_label_xpath).click()
+
+
 
     def verify_second_card(self):
         self.synchronize()
@@ -154,19 +172,20 @@ class TC006_third_solutionPage:
 
     def synchronize(self):
         try:
-            self.driver.implicitly_wait(10000)
+
+            self.driver.implicitly_wait(100000)
         except:
             print("Synchronize self.driver.implicitly_wait time out fail "
                   "will increase the time to 10 seconds more "
                   "to max ****************************************")
         try:
-            self.driver.set_page_load_timeout(10000)
+            self.driver.set_page_load_timeout(1000000)
         except:
             print("Synchronize self.driver.implicitly_wait time out fail "
                   "will increase the time to 10 seconds more "
                   "to max ***************************************")
         try:
-            self.driver.set_page_load_timeout(10000)
+            self.driver.set_page_load_timeout(1000000)
             wait = WebDriverWait(driver, 10000, poll_frequency=1)
         except:
             print("Synchronize self.driver.implicitly_wait time out fail "
@@ -175,13 +194,13 @@ class TC006_third_solutionPage:
 
     def synchronize_pwd(self):
         try:
-            self.driver.implicitly_wait(100000000000000)
+            self.driver.implicitly_wait(1000000)
         except:
             print("synchronize_pwd self.driver.implicitly_wait(10)  time out fail "
                   "will increase the time to 10 seconds more "
                   "to max 60 ***********************************")
         try:
-            self.driver.set_page_load_timeout(1000000000)
+            self.driver.set_page_load_timeout(1000000)
         except:
             print("synchronize_pwdself.driver.set_page_load_timeout(20) time out fail "
                   "will increase the time to 10 seconds more"
