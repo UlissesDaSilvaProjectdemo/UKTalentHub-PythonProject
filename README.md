@@ -1,4 +1,4 @@
-# Plentific_Trello_project
+#Trello_project
 ============
 pyhton 3.10
 https://www.python.org/downloads/
