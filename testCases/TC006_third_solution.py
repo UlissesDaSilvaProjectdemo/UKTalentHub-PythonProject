@@ -35,13 +35,19 @@ class Test_001_Login:
         self.lp.atlassian_click_login()
         self.lp.navigate_to_first_card()
         self.lp.open_first_card()
+        self.lp.verify_first_card()
+
         self.lp.add_new_comment_first_card()
         self.lp.close_first_card()
         self.lp.navigate_to_second_card()
+        self.lp.add_comment_second_card()
         self.lp.verify_second_card()
+
+        self.lp.click_open_label()
+        self.lp.click_red_label()
+
         self.lp.close_second_card()
-        self.lp.verify_first_card()
-        self.lp.verify_first_card_with_comment()
+
         #self.lp.set_card_to_done()
 
 

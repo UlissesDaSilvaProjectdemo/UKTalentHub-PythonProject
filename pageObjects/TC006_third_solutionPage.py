@@ -1,11 +1,9 @@
-import logging
+
 import driver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from utilities.customLogger import LogGen
-import softest
-
 logger = LogGen.loggen()
 
 
@@ -23,11 +21,13 @@ class TC006_third_solutionPage:
     verify_firs_card_text_xpath = "//title[contains(text(),'first_card on Plentific_Trello')]"
     close_first_card_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/a"
     click_second_card_xpath = "//*[@id='board']/div[1]/div/div[2]/a[2]"
-    verify_second_card_text_xpath = "//title[contains(text(),'New Name for second card on Plentific_Trello')]"
+    verify_second_card_text_xpath = "//h2[contains(text(),'New Name for second card')]"
     add_comment_second_card_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/div/div[4]/div[11]/div[2]/form/div/div/textarea"
-    click_open_label_xpath="//*[@class='js-sidebar-action-text']"
 
+    click_open_label_xpath="//*[@class='js-sidebar-action-text']"
     click_red_label_xpath="//*[@class='card-label mod-selectable card-label-ared active js-select-label']"
+
+
     close_second_card_xpath = "//a[@class='icon-md icon-close dialog-close-button js-close-window']"
     verify_first_card_with_comment_xpath = "//*[@class='current-comment js-friendly-links js-open-card']"
     add_new_comment_first_card_xpath = "//*[@id='chrome-container']/div[3]/div/div[2]/div/div[4]/div[11]/div[2]/form/div/div/textarea"
@@ -35,10 +35,6 @@ class TC006_third_solutionPage:
     target_element_xpath = "//*[@id='board']/div[4]/div/div[1]/textarea"
     click_cant_login_id = "resetPassword"
     click_return_login_xpath = "//*[@id='reset-password-email-cancel']"
-
-
-
-
     link_logout_linktext = "Logout"
 
     def __init__(self, driver):
@@ -98,27 +94,15 @@ class TC006_third_solutionPage:
         self.synchronize()
         try:
             card_name = self.driver.find_element_by_xpath(self.verify_firs_card_text_xpath).text
+        except:
             if card_name == "first_card on Plentific_Trello":
                 logger.error('Verify first card valid! (%s)', card_name)
                 assert True
             else:
                 self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
-                logger.error('Verify   first card not valid! (%s)', card_name)
-        except:
-            assert False, 'first card  Assertions Fails'
+                logger.error('Verify first card not valid! (%s)', card_name)
+                assert False
 
-    def verify_first_card_with_comment(self):
-        self.synchronize()
-        try:
-            card_name = self.driver.find_element_by_xpath(self.verify_first_card_with_comment_xpath).text
-            if card_name == "Fancy new comment":
-                logger.error('Verify comment card valid! (%s)', card_name)
-                assert True
-            else:
-                self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
-                logger.error('Verify  comment card not valid! (%s)', card_name)
-        except:
-            assert False, 'Second comment Card with Assertions Fails'
 
     def add_new_comment_first_card(self):
         self.driver.find_element_by_xpath(self.add_new_comment_first_card_xpath).send_keys("add new comment")
@@ -142,20 +126,22 @@ class TC006_third_solutionPage:
 
 
 
-    def verify_second_card(self):
+    def add_comment_second_card(self):
         self.synchronize()
         self.driver.find_element_by_xpath(self.add_comment_second_card_xpath).send_keys(
             "verify second card and set as done")
+
+    def verify_second_card(self):
         try:
             card_name = self.driver.find_element_by_xpath(self.verify_second_card_text_xpath).text
+        except:
             if card_name == "New Name for second card on Plentific_Trello":
                 logger.error('verify second card and set as done valid! (%s)')
                 assert True
             else:
                 self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
                 logger.error('verify second card and set as done not valid! (%s)')
-        except:
-            assert False, 'verify second card and set as done Assertions Fails'
+                assert False, 'verify second card and set as done Assertions Fails'
 
     def close_second_card(self):
         self.synchronize()
@@ -172,99 +158,133 @@ class TC006_third_solutionPage:
 
     def synchronize(self):
         try:
-
-            self.driver.implicitly_wait(100000)
+            self.driver.implicitly_wait(10000000)
         except:
-            print("Synchronize self.driver.implicitly_wait time out fail "
+            print("synchronize self.driver.implicitly_wait time out fail "
                   "will increase the time to 10 seconds more "
                   "to max ****************************************")
         try:
-            self.driver.set_page_load_timeout(1000000)
+            self.driver.set_page_load_timeout(10000000)
         except:
-            print("Synchronize self.driver.implicitly_wait time out fail "
+            print("synchronize self.driver.set_page_load_timeout time out fail "
                   "will increase the time to 10 seconds more "
                   "to max ***************************************")
         try:
-            self.driver.set_page_load_timeout(1000000)
-            wait = WebDriverWait(driver, 10000, poll_frequency=1)
+            self.driver.set_page_load_timeout(10000000)
         except:
-            print("Synchronize self.driver.implicitly_wait time out fail "
+            print("synchronize self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            wait = WebDriverWait(driver, 10000000, poll_frequency=1)
+        except:
+            print("synchronize self.driver.WebDriverWait time out fail "
                   "will increase the time to 10 seconds more "
                   "to max ***********************************")
 
     def synchronize_pwd(self):
         try:
-            self.driver.implicitly_wait(1000000)
+            self.driver.implicitly_wait(10000000)
         except:
-            print("synchronize_pwd self.driver.implicitly_wait(10)  time out fail "
+            print("synchronize_pwd self.driver.implicitly_wait time out fail "
                   "will increase the time to 10 seconds more "
-                  "to max 60 ***********************************")
+                  "to max ****************************************")
         try:
-            self.driver.set_page_load_timeout(1000000)
+            self.driver.set_page_load_timeout(10000000)
         except:
-            print("synchronize_pwdself.driver.set_page_load_timeout(20) time out fail "
-                  "will increase the time to 10 seconds more"
-                  "to max 60 ***********************************")
-        try:
-            self.driver.set_page_load_timeout(10000)
-            wait = WebDriverWait(driver, 10000, poll_frequency=1)
-
-        finally:
-                print("Synchronize_pwd self.driver.implicitly_wait time out fail "
-                  "will increase the time to 10 seconds more "
-                  "to max **************************************")
-
-
-
-    def synchronize_first_card(self):
-        try:
-            self.driver.implicitly_wait(10000)
-        except:
-            print("synchronize_first_card page load time out fail "
-                  "will increase the time to 10 seconds more"
-                  "to max ************************************")
-        try:
-            self.driver.set_page_load_timeout(10000)
-        except:
-            print("synchronize_first_card page load time out fail "
-                  "will increase the time to 10 seconds more"
-                  "to max ***********************************")
-        try:
-            self.driver.set_page_load_timeout(10000)
-            wait = WebDriverWait(driver, 10000, poll_frequency=1)
-        finally:
-            print("Finally - synchronize_first_card self.driver.implicitly_wait time out fail "
-                  "will increase the time to 10 seconds more "
-                  "to max *************************************")
-
-    def synchronize_atlassian_signup(self):
-        try:
-            self.driver.implicitly_wait(10000)
-        except:
-            print("synchronize_atlassian_signup page load time out fail "
+            print("synchronize_pwd self.driver.set_page_load_timeout time out fail "
                   "will increase the time to 10 seconds more "
                   "to max ***************************************")
         try:
-            self.driver.set_page_load_timeout(10000)
+            self.driver.set_page_load_timeout(10000000)
         except:
-            print("synchronize_atlassian_signup page load time out fail "
-                  "will increase the time to 10 seconds more"
+            print("synchronize_pwd self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            wait = WebDriverWait(driver, 10000000, poll_frequency=1)
+        except:
+            print("synchronize_pwd self.driver.WebDriverWait time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***********************************")
+
+    def synchronize_first_card(self):
+        try:
+            self.driver.implicitly_wait(10000000)
+        except:
+            print("synchronize_first_card self.driver.implicitly_wait time out fail "
+                  "will increase the time to 10 seconds more "
                   "to max ****************************************")
         try:
-            self.driver.set_page_load_timeout(10000)
-            wait = WebDriverWait(driver, 10000, poll_frequency=1)
-        finally:
-            print("synchronize_atlassian_signup page load time out fail "
-                  "will increase the time to 10 seconds more"
+            self.driver.set_page_load_timeout(10000000)
+        except:
+            print("synchronize_first_card self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            self.driver.set_page_load_timeout(10000000)
+        except:
+            print("synchronize_first_card self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            wait = WebDriverWait(driver, 10000000, poll_frequency=1)
+        except:
+            print("synchronize_first_card self.driver.WebDriverWait time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***********************************")
+
+
+    def synchronize_atlassian_signup(self):
+        try:
+            self.driver.implicitly_wait(10000000)
+        except:
+            print("synchronize_atlassian_signup self.driver.implicitly_wait time out fail "
+                  "will increase the time to 10 seconds more "
                   "to max ****************************************")
+        try:
+            self.driver.set_page_load_timeout(10000000)
+        except:
+            print("synchronize_atlassian_signup self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            self.driver.set_page_load_timeout(10000000)
+        except:
+            print("synchronize_atlassian_signup self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            wait = WebDriverWait(driver, 10000000, poll_frequency=1)
+        except:
+            print("synchronize_atlassian_signup self.driver.WebDriverWait time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***********************************")
 
     def Synchronize_first_Card_comment(self):
         try:
-            self.driver.set_page_load_timeout(10000)
-            wait = WebDriverWait(driver, 10000, poll_frequency=1)
+            self.driver.implicitly_wait(10000000)
         except:
-            print("synchronize_atlassian_signup page load time out fail "
-                  "will increase the time to 10 seconds more"
+            print("Synchronize_first_Card_comment self.driver.implicitly_wait time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ****************************************")
+        try:
+            self.driver.set_page_load_timeout(10000000)
+        except:
+            print("Synchronize_first_Card_comment self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            self.driver.set_page_load_timeout(10000000)
+        except:
+            print("Synchronize_first_Card_comment self.driver.set_page_load_timeout time out fail "
+                  "will increase the time to 10 seconds more "
+                  "to max ***************************************")
+        try:
+            wait = WebDriverWait(driver, 10000000, poll_frequency=1)
+        except:
+            print("Synchronize_first_Card_comment  self.driver.WebDriverWait time out fail "
+                  "will increase the time to 10 seconds more "
                   "to max ***********************************")
 
 

@@ -51,7 +51,6 @@ class TC005_second_solutionPage:
     def atlassian_signup(self, supportUrl):
         self.driver.get(supportUrl)
         self.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-        self.driver.find_element_by_tag_name('body').send_keys(Keys.F5)
         self.driver.find_element_by_xpath(self.atlassian_signup_xpath).click()
 
     def already_have_an_account(self):

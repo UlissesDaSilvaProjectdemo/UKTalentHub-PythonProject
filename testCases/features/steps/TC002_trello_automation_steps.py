@@ -33,9 +33,12 @@ account_sign_up = ReadConfig.account_sign_up()
 
 @given('the user navigate to the login page')
 def navigate(context):
-    context.driver = webdriver.Chrome(ChromeDriverManager().install())
-    context.driver.get('https://trello.com/login')
+    context.driver =  webdriver.Chrome(ChromeDriverManager().install())
+    context.driver.get('https://trello.com')
     context.driver.maximize_window()
+    context.driver.find_element_by_xpath("//*[@class='btn btn-sm btn-link text-primary']").click()
+
+
 
 
 @when('the user set username "{user}" and "{pwd}" password')
@@ -43,49 +46,54 @@ def username(context,user,pwd):
     context.driver.implicitly_wait(1000)
     context.driver.find_element_by_id(textbox_username_id).send_keys(user)
     context.driver.find_element_by_xpath("//*[@id='password']").send_keys(pwd)
+    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
 
 
 @then('the user click on atlassian signup')
 def click_atlassian_signup(context):
-    context.driver.implicitly_wait(1000000)
-    context.driver.find_element_by_id(login_btn_id).click()
+    context.driver.get("https://id.atlassian.com/login")
+    context.driver.implicitly_wait(1000)
+    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
+    context.driver.find_element_by_xpath(atlassian_signup_xpath).click()
 
 
 @then('the user click on already have account')
 def already_have_account(context):
-    context.driver.implicitly_wait(10000)
+    context.driver.implicitly_wait(1000)
     context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-    context.driver.find_element_by_xpath("//*[@id=/signup']").click()
+    context.driver.find_element_by_id(atlassian_already_have_an_account_id).click()
 
 
 @then('the user click can\'t login')
 def TC006_third_solutionPage(context):
-    context.driver.implicitly_wait(1000)
+    context.driver.implicitly_wait(10000)
     context.driver.find_element_by_id(click_cant_login_id).click()
 
 
 @then('the user click return login')
 def TC006_third_solutionPage(context):
-    context.driver.implicitly_wait(1000)
+    context.driver.implicitly_wait(10000)
     context.driver.find_element_by_xpath(click_return_login_xpath).click()
 
 
 @then('the user enter trello password')
-def TC006_third_solutionPage(context,trello_password,textbox_password_id):
-    context.driver.implicitly_wait(1000)
-    context.driver.find_element_by_id(textbox_password_id).send_keys(trello_password)
+def TC006_third_solutionPage(context):
+    context.driver.implicitly_wait(10000)
+    context.driver.find_element_by_id("password").send_keys("trellologin2021@1234$")
+
+
 
 
 @then('the user click on atlassian login')
 def TC006_third_solutionPage(context):
-    context.driver.implicitly_wait(1000)
+    context.driver.implicitly_wait(100000)
     context.driver.find_element_by_xpath(atlassian_click_login_xpath).click()
 
 
 @given('the user navigate to the first card')
 def TC006_third_solutionPage(context):
-    context.driver.implicitly_wait(1000)
-    context.synchronize_first_card()
+    context.driver.implicitly_wait(10000)
+    context.driver.set_page_load_timeout(100000)
     context.driver.find_element_by_xpath(navigate_to_card_xpath).click()
 
 
@@ -115,7 +123,7 @@ def navigate(context):
 
 @when('the user verify second card')
 def TC006_third_solutionPage(context):
-    print("test")
+    context.driver.implicitly_wait(1000)
 
 
 @when('the user close second card')
@@ -126,4 +134,4 @@ def step_impl(context):
 
 @then('the user set card to done')
 def TC006_third_solutionPage(context):
-    print("test")
+    context.driver.implicitly_wait(1000)
