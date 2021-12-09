@@ -39,7 +39,7 @@ class LoginPage:
     def __init__(self, driver):
         self.driver = driver
 
-    #Implicit wait Mix With Explicit  Synchronization Not Recomended -----------------------//------------------
+    #Implicit wait Mix With Explicit  Synchronization ------------------//------------------
     def click_login_link(self):
         self.driver.maximize_window()
         self.driver.find_element_by_xpath(self.Login_linkBtn_xpath).click()
