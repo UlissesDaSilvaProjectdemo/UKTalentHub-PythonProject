@@ -3,7 +3,6 @@ from selenium import webdriver
 
 from webdriver_manager.chrome import ChromeDriverManager
 
-
 @pytest.fixture()
 def setup(browser):
 
@@ -11,12 +10,10 @@ def setup(browser):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         print("Launching chrome browser.........")
     elif browser == 'firefox':
-        # driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         print("Launching firefox browser.........")
 
     return driver
-
-
 
 def pytest_addoption(parser):    # This will get the value from CLI /hooks
     parser.addoption("--browser")
@@ -29,7 +26,7 @@ def browser(request):  # This will return the Browser value to setup method
 
 # It is hook for Adding Environment info to HTML Report
 def pytest_configure(config):
-    config._metadata = {}  # why do we need this?
+    config._metadata = {}  # API metadata
     config._metadata['Project Name'] = 'plentific_trello'
     config._metadata['Module Name'] = 'Customers'
     config._metadata['Tester'] = 'Ulisses Da Silva'

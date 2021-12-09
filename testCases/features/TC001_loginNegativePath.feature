@@ -2,7 +2,7 @@ Feature: the user would like to login into the application
 
   Scenario Outline: the user should not  not login with invalid credentials - Negative path
     Given the user launch chrome browser
-    When  the user open the trello application homepage
+    When  the user open the UKTalentTeam homepage
     Then  the user enter username "<username>" and password "<password>"
     And   the user click on the login button
     And   the user do not successfully login into the application homepage
