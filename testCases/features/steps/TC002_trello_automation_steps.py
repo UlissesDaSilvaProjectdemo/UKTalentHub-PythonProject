@@ -1,9 +1,7 @@
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.driver import driver
 from utilities.readProperties import ReadConfig
 
 Login_linkBtn_xpath = ReadConfig.Login_linkBtn_xpath()

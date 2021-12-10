@@ -1,12 +1,6 @@
 import configparser
-import self
-from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager import driver
-
 config = configparser.RawConfigParser()
 config.read(".\\Configurations\\config.ini")
-
 
 class ReadConfig:
 
@@ -158,5 +152,5 @@ class ReadConfig:
 
     @staticmethod
     def login_button():
-        account_sign_up = config.get('common info', 'login_button')
+        login_button = config.get('common info', 'login_button')
         return login_button

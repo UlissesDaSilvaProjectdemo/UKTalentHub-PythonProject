@@ -1,12 +1,15 @@
 import pytest
 from selenium import webdriver
-
 from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
+
+
 
 @pytest.fixture()
 def setup(browser):
     if browser == 'chrome':
         driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver.maximize_window()
         print("Launching chrome browser.........")
 
     elif browser == 'firefox':

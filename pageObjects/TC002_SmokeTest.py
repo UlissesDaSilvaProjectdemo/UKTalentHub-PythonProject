@@ -1,4 +1,3 @@
-
 import driver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -6,8 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from utilities.customLogger import LogGen
 logger = LogGen.loggen()
 
-
-class TC006_third_solutionPage:
+class  SmokeTest:
     Login_linkBtn_xpath = "//a[@class='btn btn-sm btn-link text-primary']"
     textbox_username_id = "user"
     login_btn_id = "login"
@@ -26,7 +24,6 @@ class TC006_third_solutionPage:
 
     click_open_label_xpath="//*[@class='js-sidebar-action-text']"
     click_red_label_xpath="//*[@class='card-label mod-selectable card-label-ared active js-select-label']"
-
 
     close_second_card_xpath = "//a[@class='icon-md icon-close dialog-close-button js-close-window']"
     verify_first_card_with_comment_xpath = "//*[@class='current-comment js-friendly-links js-open-card']"
