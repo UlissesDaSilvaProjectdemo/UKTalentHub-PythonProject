@@ -6,13 +6,13 @@ from selenium.webdriver import ActionChains
 
 class TC004_first_solutionPage:
     # emaillogin =
-    emaillogin = ReadConfig.emaillogin()
+    email_login = ReadConfig.emaillogin()
 
     # password =
     password = ReadConfig.password()
 
     #loginbutton
-    loginbutton = ReadConfig.password()
+    login_button = ReadConfig.password()
 
     def __init__(self, driver):
         self.driver = driver
