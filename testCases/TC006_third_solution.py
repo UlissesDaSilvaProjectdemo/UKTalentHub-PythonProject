@@ -7,7 +7,6 @@ from pageObjects.TC006_third_solutionPage import TC006_third_solutionPage
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
-
 class Test_001_Login:
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUseremail()

@@ -29,6 +29,7 @@ click_cant_login_id = ReadConfig.click_cant_login_id()
 click_return_login_xpath = ReadConfig.click_return_login_xpath()
 link_logout_link_text = ReadConfig.link_logout_linktext()
 account_sign_up = ReadConfig.account_sign_up()
+login_button = ReadConfig.login_button()
 
 
 @given('the user navigate to the login page')

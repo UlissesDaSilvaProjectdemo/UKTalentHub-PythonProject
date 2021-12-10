@@ -5,10 +5,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture()
 def setup(browser):
-
     if browser == 'chrome':
         driver = webdriver.Chrome(ChromeDriverManager().install())
         print("Launching chrome browser.........")
+
     elif browser == 'firefox':
         driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         print("Launching firefox browser.........")

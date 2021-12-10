@@ -2,7 +2,6 @@ import logging
 import requests
 import unittest
 
-
 API_KEY = '89490e1e5ab8c2a998dd7c0ab3bf67c6'
 TOKEN = '06c029430141a14f1112f8020f1ea5d51c360656a4fe579eb602e0f971efd0c2'
 

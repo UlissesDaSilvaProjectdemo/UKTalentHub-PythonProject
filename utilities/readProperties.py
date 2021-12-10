@@ -152,11 +152,11 @@ class ReadConfig:
         return link_logout_linktext
 
     @staticmethod
-    def account_sign_up( ):
+    def account_sign_up():
         account_sign_up = config.get('common info', 'account_sign_up')
         return account_sign_up
 
     @staticmethod
-    def loginbutton(self):
-        account_sign_up = config.get('common info', 'loginbutton')
-        return loginbutton
+    def login_button():
+        account_sign_up = config.get('common info', 'login_button')
+        return login_button
