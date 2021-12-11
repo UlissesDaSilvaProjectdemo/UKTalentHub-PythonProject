@@ -19,7 +19,11 @@ def setup(browser):
     return driver
 
 def pytest_addoption(parser):    # This will get the value from CLI /hooks
+    options = webdriver.ChromeOptions()
+    options.add_argument("start-maximized")
+    options.add_argument('disable-infobars')
     parser.addoption("--browser")
+
 
 @pytest.fixture()
 def browser(request):  # This will return the Browser value to setup method
@@ -30,7 +34,7 @@ def browser(request):  # This will return the Browser value to setup method
 # It is hook for Adding Environment info to HTML Report
 def pytest_configure(config):
     config._metadata = {}  # API metadata
-    config._metadata['Project Name'] = 'plentific_trello'
+    config._metadata['Project Name'] = 'UKTalentHub'
     config._metadata['Module Name'] = 'Customers'
     config._metadata['Tester'] = 'Ulisses Da Silva'
 

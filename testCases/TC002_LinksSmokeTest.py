@@ -1,7 +1,7 @@
 import pytest
-from pageObjects.TC001_LoginPage import LoginPage
-from utilities.customLogger import LogGen
+from pageObjects.TC002_LinksSmokeTestPage import SmokeTest
 from utilities.readProperties import ReadConfig
+from utilities.customLogger import LogGen
 
 class Test_001_Login:
     baseURL = ReadConfig.getApplicationURL()
@@ -11,19 +11,12 @@ class Test_001_Login:
 
     @pytest.mark.sanity
     @pytest.mark.regression
-    def test_login(self,setup):
-
+    def test_login(self, setup):
         self.logger.info("****Started Login Test****")
         self.driver = setup
         self.driver.get(self.baseURL)
-        self.lp = LoginPage(self.driver)
-        #self.lp.contact()
-        self.lp.signin_button()
-        self.lp.setPassword(self.password)
-        self.lp.setUserName(self.username)
-        self.lp.login_btn()
-
-
+        self.lp = SmokeTest(self.driver)
+        self.lp.broken_link()
 
         act_title = self.driver.title
         if act_title == "New Name for second card on Plentific_Trello":  # Boards | Trello
@@ -33,8 +26,5 @@ class Test_001_Login:
         else:
             self.logger.error("****Login test failed ****")
             self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
-            # self.driver.close()
+            self.driver.close()
             assert False
-
-
-

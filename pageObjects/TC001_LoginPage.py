@@ -1,5 +1,4 @@
 from telnetlib import EC
-
 from driver import driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -31,9 +30,12 @@ class LoginPage:
         self.driver.find_element_by_xpath(self.password_xpath).send_keys(password)
 
     def login_btn(self):
-        element = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//*[@id='SubmitLogin']")))
-        element.click()
+        #element = WebDriverWait(driver, 10).until(
+            #EC.presence_of_element_located((By.XPATH, "//*[@id='SubmitLogin']")))
+        #element.click()
         self.driver.find_element_by_id(self.login_button_xpath).click()
+
+    def broken_image(self):
+        pass
 
 

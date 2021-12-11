@@ -154,3 +154,8 @@ class ReadConfig:
     def login_button():
         login_button = config.get('common info', 'login_button')
         return login_button
+
+    @staticmethod
+    def get_smoketestbaseURL(self):
+        get_smoketestbaseURL = config.get('common info', 'get_smoketestbaseURL')
+        return get_smoketestbaseURL
