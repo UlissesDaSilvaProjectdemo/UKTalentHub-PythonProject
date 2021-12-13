@@ -3,12 +3,11 @@ import requests
 import unittest
 
 
-#API_KEY = '89490e1e5ab8c2a998dd7c0ab3bf67c6'
-#TOKEN = '06c029430141a14f1112f8020f1ea5d51c360656a4fe579eb602e0f971efd0c2'
-
 API_KEY = '89490e1e5ab8c2a998dd7c0ab3bf67c6'
 TOKEN = '06c029430141a14f1112f8020f1ea5d51c360656a4fe579eb602e0f971efd0c2'
 
+#API_KEY = '89490e1e5ab8c2a998dd7c0ab3bf67c6'
+#TOKEN = '06c029430141a14f1112f8020f1ea5d51c360656a4fe579eb602e0f971efd0c2'
 
 
 class TrelloApiTest(unittest.TestCase):
@@ -16,14 +15,14 @@ class TrelloApiTest(unittest.TestCase):
     # created board
     def setUp(self):
         self.board_id = self.create_board()
-        list_id = self.create_list(self.board_id, name=" Plentific_ChecKlist")
+        list_id = self.create_list(self.board_id, name=" UKTalentTeam_ChecKlist")
         first_card_id = self.create_card(list_id, name="first_card")
         second_card_id = self.create_card(list_id, name="second_card")
         third_card_id = self.create_card(list_id, name="third_card")
 
         self.edit_card(second_card_id, name="presentation", desc=' add a new description')
         self.delete_card(third_card_id)
-        self.add_comment_to_card(first_card_id, text="Fancy new comment")
+        self.add_comment_to_card(first_card_id, text="test Fancy new comment")
 
     def tearDown(self):
         self.delete_board(self.board_id)
