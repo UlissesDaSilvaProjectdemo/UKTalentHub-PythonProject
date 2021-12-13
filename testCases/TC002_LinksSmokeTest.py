@@ -19,7 +19,7 @@ class Test_001_Login:
         self.lp.broken_link()
 
         act_title = self.driver.title
-        if act_title == "New Name for second card on Plentific_Trello":  # Boards | Trello
+        if act_title == "BBC - Home":  # Boards | Trello
             self.logger.info("****Login test passed ****")
             self.driver.close()
             assert True

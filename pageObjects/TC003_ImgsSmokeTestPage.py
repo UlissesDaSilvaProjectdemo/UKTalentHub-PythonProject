@@ -1,6 +1,4 @@
 import requests
-import urllib3
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from utilities.customLogger import LogGen
 from utilities.readProperties import ReadConfig

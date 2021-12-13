@@ -1,8 +1,4 @@
-import driver
 import requests
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
 from utilities.customLogger import LogGen
 logger = LogGen.loggen()
 
@@ -42,8 +38,8 @@ class  SmokeTest:
         self.driver.find_element_by_id(self.textbox_username_id).send_keys(username)
 
     def setPassword(self,password):
-        self.driver.find_element_by_id(self.textbox_password_id).clear()
-        self.driver.find_element_by_id(self.textbox_password_id).send_keys(password)
+        self.driver.find_element_by_id(self.textbox_username_id).clear()
+        self.driver.find_element_by_id(self.textbox_username_id).send_keys(password)
 
     def login_btn(self):
         self.synchronize()
