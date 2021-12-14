@@ -5,10 +5,10 @@ https://www.python.org/downloads/
 Download Windows embeddable package (64-bit)
 Download Windows installer (64-bit)
 C:\Users\username
-============ 
+===========
 pycharm  
 https://www.jetbrains.com/pycharm/download/#section=windows 
-========== 
+============  
 set up environment variables - system path 
 Control Panel-->System and Security-->System - > Advanced system settings --> Enviroment Variable -->System Variables-->path-->Edit-->New-->paste the pyhton c:/path and click ok ===========  
 pip install selenium  :selinium libraries 
