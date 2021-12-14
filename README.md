@@ -1,7 +1,9 @@
-#Trello_project 
+#UKTalentHUB
 ============ 
 pyhton 3.10 
 https://www.python.org/downloads/ 
+Download Windows embeddable package (64-bit)
+Download Windows installer (64-bit)
 ============ 
 pycharm  
 https://www.jetbrains.com/pycharm/download/#section=windows 
