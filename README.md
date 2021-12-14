@@ -21,7 +21,7 @@ pip install webdriver-manager
 pip install behave 
 ============== 
 clone Framework: 
-git clone https://github.com/UlissesDaSilvaProjectdemo/Plentific_Trello_project.git 
+git clone https://github.com/UlissesDaSilvaProjectdemo/UKTalentHub-PythonProject.git
 ============== 
 page object imports:#  
 import softest 
