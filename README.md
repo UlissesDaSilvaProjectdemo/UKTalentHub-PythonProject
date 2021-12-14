@@ -1,11 +1,14 @@
-#Trello_project 
+#UKTalentHUB
 ============ 
 pyhton 3.10 
 https://www.python.org/downloads/ 
-============ 
+Download Windows embeddable package (64-bit)
+Download Windows installer (64-bit)
+C:\Users\username
+===========
 pycharm  
 https://www.jetbrains.com/pycharm/download/#section=windows 
-========== 
+============  
 set up environment variables - system path 
 Control Panel-->System and Security-->System - > Advanced system settings --> Enviroment Variable -->System Variables-->path-->Edit-->New-->paste the pyhton c:/path and click ok ===========  
 pip install selenium  :selinium libraries 
@@ -18,7 +21,7 @@ pip install webdriver-manager
 pip install behave 
 ============== 
 clone Framework: 
-git clone https://github.com/UlissesDaSilvaProjectdemo/Plentific_Trello_project.git 
+git clone https://github.com/UlissesDaSilvaProjectdemo/UKTalentHub-PythonProject.git
 ============== 
 page object imports:#  
 import softest 
