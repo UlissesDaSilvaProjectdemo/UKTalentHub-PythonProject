@@ -44,7 +44,7 @@ from pageObjects.TC006_third_solutionPage import TC006_third_solutionPage
 from utilities.readProperties import ReadConfig 
 from utilities.customLogger import LogGen 
 ================ 
-execution: 
+execution:
 behave testCases/features/TC001_loginNegativePath.feature
 pytest -s -v  --html=.Reports/report.html testCases/TC001_LoginTest.py --browser chrome
 pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
