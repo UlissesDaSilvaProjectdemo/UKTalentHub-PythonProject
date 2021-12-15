@@ -45,7 +45,9 @@ from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen 
 ================ 
 execution: 
-pytest -s -v  --html=.Reports/report.html testCases/TC006_third_solution.py --browser chrome 
-behave testCases/features/loginNegativePath.feature
+behave testCases/features/TC001_loginNegativePath.feature
+pytest -s -v  --html=.Reports/report.html testCases/TC001_LoginTest.py --browser chrome
+pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
+pytest -s -v  --html=.Reports/report.html testCases/TC004_RestAPI.py --browser chrome
 # UKTalentHub-PythonProject
-# UKTalentHub-PythonProject
+
