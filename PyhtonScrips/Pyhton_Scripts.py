@@ -7,11 +7,11 @@ import logging
 import time
 import keyword
 
-import driver as driver
-from selenium.webdriver import DesiredCapabilities
-from turtledemo.chaos import g
-from selenium.webdriver.chrome import webdriver
-import openpyxl
+# import driver as driver
+# from selenium.webdriver import DesiredCapabilities
+# from turtledemo.chaos import g
+# from selenium.webdriver.chrome import webdriver
+# import openpyxl
 from selenium.webdriver.chrome.options import Options
 
 

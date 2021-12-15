@@ -22,6 +22,10 @@ class TrelloApiTest(unittest.TestCase):
         self.delete_card(third_card_id)
         self.add_comment_to_card(first_card_id, text="UK talent Hub  comment")
 
+
+
+
+
     def tearDown(self):
         self.delete_board(self.board_id)
 
@@ -59,6 +63,7 @@ class TrelloApiTest(unittest.TestCase):
     def add_comment_to_card(self, card_id, text):  # POST /1/cards/{id}/actions/comments
         return requests.post(f'https://api.trello.com/1/cards/{card_id}/actions/comments?key={API_KEY}&token={TOKEN}',
                              json={'text': text})
+
 
 
 if __name__ == "__main__":

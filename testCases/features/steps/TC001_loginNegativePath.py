@@ -45,7 +45,7 @@ def step_impl(context):
 
 def step_impl(context):
      time.sleep(3)
-     context.driver.close()
+
 
 
 

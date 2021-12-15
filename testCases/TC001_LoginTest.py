@@ -23,14 +23,14 @@ class Test_001_Login:
         self.lp.login_btn()
 
         act_title = self.driver.title
-        if act_title == "BBC - Home": # page title
+        if act_title == "Login - My Store": #Login - My Store
             self.logger.info("****Login test passed ****")
             self.driver.close()
             assert True
         else:
             self.logger.error("****Login test failed ****")
             self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
-            # self.driver.close()
+            self.driver.close()
             assert False
 
 
