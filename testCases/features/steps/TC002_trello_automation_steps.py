@@ -6,7 +6,7 @@ from utilities.readProperties import ReadConfig
 
 Login_linkBtn_xpath = ReadConfig.Login_linkBtn_xpath()
 textbox_username_id = ReadConfig.textbox_username_id()
-login_btn_id = ReadConfig.login_btn_id()
+
 login_with_atlassian_id = ReadConfig.login_with_atlassian_id()
 atlassian_signup_xpath = ReadConfig.atlassian_signup_xpath()
 atlassian_already_have_an_account_id = ReadConfig.atlassian_already_have_an_account_id()
@@ -27,7 +27,7 @@ click_cant_login_id = ReadConfig.click_cant_login_id()
 click_return_login_xpath = ReadConfig.click_return_login_xpath()
 link_logout_link_text = ReadConfig.link_logout_linktext()
 account_sign_up = ReadConfig.account_sign_up()
-login_button = ReadConfig.login_button()
+
 
 
 @given('the user navigate to the login page')

@@ -2,7 +2,7 @@ Feature: the user would like to navigate to the cards and perform some actions
 
   Scenario: the user should be able to login with valid credentials
       Given the user navigate to the login page
-      When  the user set username "trellologin2021@gmail.com" and "trellologin20221@1234$" password
+      When  the user set username "trellologin2021@xxx" and "trellologxxx" password
       Then  the user click on the login button
       And   the user click on atlassian signup
       And   the user click on already have account

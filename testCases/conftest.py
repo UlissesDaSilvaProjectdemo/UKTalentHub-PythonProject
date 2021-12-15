@@ -20,7 +20,7 @@ def setup(browser):
     elif browser == 'IEBrowser':
 
         driver = webdriver.Ie(IEDriverManager().install())
-        print("Launching firefox browser.........")
+        print("Launching IEBrowser browser.........")
 
     return driver
 

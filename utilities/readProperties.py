@@ -40,10 +40,7 @@ class ReadConfig:
         textbox_username_id = config.get('common info', 'textbox_username_id')
         return textbox_username_id
 
-    @staticmethod
-    def login_btn_id():
-        login_btn_id = config.get('common info', 'login_btn_id')
-        return login_btn_id
+
 
     @staticmethod
     def login_with_atlassian_id():
@@ -150,12 +147,9 @@ class ReadConfig:
         account_sign_up = config.get('common info', 'account_sign_up')
         return account_sign_up
 
-    @staticmethod
-    def login_button():
-        login_button = config.get('common info', 'login_button')
-        return login_button
+
 
     @staticmethod
-    def get_smoketestbaseURL(self):
+    def get_smoketestbaseURL():
         get_smoketestbaseURL = config.get('common info', 'get_smoketestbaseURL')
         return get_smoketestbaseURL

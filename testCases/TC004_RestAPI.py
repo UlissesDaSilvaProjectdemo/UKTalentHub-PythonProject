@@ -20,7 +20,7 @@ class TrelloApiTest(unittest.TestCase):
 
         self.edit_card(second_card_id, name="New Name for second card", desc=' add a new description')
         self.delete_card(third_card_id)
-        self.add_comment_to_card(first_card_id, text="Fancy new comment")
+        self.add_comment_to_card(first_card_id, text="UK talent Hub  comment")
 
     def tearDown(self):
         self.delete_board(self.board_id)
