@@ -1,6 +1,5 @@
 from selenium.webdriver.support.wait import WebDriverWait
 
-
 class LoginPage:
     signin_button_xpath = "//*[@id='header']/div[2]/div/div/nav/div[1]/a"
     email_login_xpath = "//*[@id='email']"

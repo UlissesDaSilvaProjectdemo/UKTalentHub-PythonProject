@@ -18,9 +18,13 @@ class TrelloApiTest(unittest.TestCase):
         second_card_id = self.create_card(list_id, name="second_card")
         third_card_id = self.create_card(list_id, name="third_card")
 
+
+
         self.edit_card(second_card_id, name="New Name for second card", desc=' add a new description')
         self.delete_card(third_card_id)
         self.add_comment_to_card(first_card_id, text="UK talent Hub  comment")
+        self.add_comment_to_card(second_card_id, text="second_card_id-UK talent Hub  comment")
+
 
 
 
@@ -63,6 +67,8 @@ class TrelloApiTest(unittest.TestCase):
     def add_comment_to_card(self, card_id, text):  # POST /1/cards/{id}/actions/comments
         return requests.post(f'https://api.trello.com/1/cards/{card_id}/actions/comments?key={API_KEY}&token={TOKEN}',
                              json={'text': text})
+
+
 
 
 
