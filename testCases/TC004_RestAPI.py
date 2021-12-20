@@ -2,10 +2,8 @@ import logging
 import requests
 import unittest
 
-
 API_KEY = '89490e1e5ab8c2a998dd7c0ab3bf67c6'
 TOKEN = '06c029430141a14f1112f8020f1ea5d51c360656a4fe579eb602e0f971efd0c2'
-
 
 
 class TrelloApiTest(unittest.TestCase):
@@ -13,22 +11,16 @@ class TrelloApiTest(unittest.TestCase):
     # created board
     def setUp(self):
         self.board_id = self.create_board()
-        list_id = self.create_list(self.board_id, name=" UKTalentHub_ChecKlist")
+        list_id = self.create_list(self.board_id, name=" ChecKlist")
         first_card_id = self.create_card(list_id, name="first_card")
         second_card_id = self.create_card(list_id, name="second_card")
         third_card_id = self.create_card(list_id, name="third_card")
+        fourth_card_id = self.create_card(list_id, name="fourth_card")
 
-
-
-        self.edit_card(second_card_id, name="New Name for second card", desc=' add a new description')
-        self.delete_card(third_card_id)
-        self.add_comment_to_card(first_card_id, text="UK talent Hub  comment")
-        self.add_comment_to_card(second_card_id, text="second_card_id-UK talent Hub  comment")
-
-
-
-
-
+        self.edit_card(second_card_id, name="Edit second card", desc=' add a new description')
+        self.delete_card(first_card_id)
+        self.add_comment_to_card(third_card_id, text=" third_card comment")
+        self.add_comment_to_card(fourth_card_id, text=" fourth_card comment")
 
     def tearDown(self):
         self.delete_board(self.board_id)
@@ -47,9 +39,10 @@ class TrelloApiTest(unittest.TestCase):
         logging.info("Created board %s", response.json())
         return response.json()["id"]
 
-    def create_list(self, board_id, name):  #  POST /1/lists
+    def create_list(self, board_id, name):  # POST /1/lists
         response = requests.post(f'https://api.trello.com/1/lists/?key={API_KEY}&token={TOKEN}',
                                  json={"idBoard": board_id, "name": name})
+        assert response.status_code == 200
         return response.json()["id"]
 
     def create_card(self, list_id, **params):  # POST /1/cards/{id}
@@ -67,8 +60,6 @@ class TrelloApiTest(unittest.TestCase):
     def add_comment_to_card(self, card_id, text):  # POST /1/cards/{id}/actions/comments
         return requests.post(f'https://api.trello.com/1/cards/{card_id}/actions/comments?key={API_KEY}&token={TOKEN}',
                              json={'text': text})
-
-
 
 
 

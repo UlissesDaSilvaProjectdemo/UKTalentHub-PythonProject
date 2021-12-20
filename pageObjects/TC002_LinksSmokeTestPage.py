@@ -29,21 +29,4 @@ class  SmokeTest:
             print(link.get_attribute('href'), r.status_code)
 
 
-    def click_login_link(self):
-        self.driver.maximize_window()
-        self.driver.find_element_by_xpath(self.Login_linkBtn_xpath).click()
-
-    def setUserName(self, username):
-        self.driver.find_element_by_id(self.textbox_username_id).clear()
-        self.driver.find_element_by_id(self.textbox_username_id).send_keys(username)
-
-    def setPassword(self,password):
-        self.driver.find_element_by_id(self.textbox_username_id).clear()
-        self.driver.find_element_by_id(self.textbox_username_id).send_keys(password)
-
-    def login_btn(self):
-        self.synchronize()
-        self.driver.find_element_by_id(self.login_btn_id).click()
-
-
 

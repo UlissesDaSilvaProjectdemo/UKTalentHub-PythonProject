@@ -19,10 +19,11 @@ class Test_001_Login:
         self.driver = setup
         self.driver.get(self.baseURL)
         self.lp = LoginPage(self.driver)
-        self.lp.signin_button()
+        self.lp.signin_button() 
         self.lp.setPassword(self.password)
         self.lp.setUserName(self.username)
         self.lp.login_btn()
+
 
         act_title = self.driver.title
         if act_title == "Login - My Store": #Login - My Store
