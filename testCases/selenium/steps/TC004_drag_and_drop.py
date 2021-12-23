@@ -20,7 +20,7 @@ def step_impl(context):
 def step_impl(context):
     fromElement = context.driver.find_element(By.ID, "draggable")
     toElement = context.driver.find_element(By.ID, "droppable")
-    time.sleep(2)
+    
     try:
         actions = ActionChains(driver)
         actions.drag_and_drop(fromElement, toElement).perform()
