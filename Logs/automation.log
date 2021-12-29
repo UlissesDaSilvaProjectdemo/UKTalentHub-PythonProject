@@ -102,3 +102,16 @@
 10/09/2021 01:39:47 PM: INFO: Current google-chrome version is 94.0.4606
 10/09/2021 01:39:47 PM: INFO: Get LATEST driver version for 94.0.4606
 10/09/2021 01:39:47 PM: INFO: Driver [C:\Users\Ulisses Da Silva\.wdm\drivers\chromedriver\win32\94.0.4606.61\chromedriver.exe] found in cache
+12/26/2021 04:39:55 PM - Test_001_Login - INFO: ****Started Login Test****
+12/26/2021 04:49:10 PM - Test_001_Login - INFO: ****Started Login Test****
+12/26/2021 04:50:00 PM - Test_001_Login - INFO: ****Started Login Test****
+12/26/2021 04:52:40 PM - Test_001_Login - INFO: ****Started Login Test****
+12/26/2021 04:54:59 PM - Test_001_Login - INFO: ****Started Login Test**** ====== WebDriver manager ======Current google-chrome version is 94.0.4606Get LATEST driver version for 94.0.4606
+12/26/2021 04:57:39 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+12/26/2021 04:57:39 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+12/26/2021 04:57:39 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+12/26/2021 04:57:39 PM - Test_001_Login - INFO: ****Started Login Test****
+12/29/2021 08:53:17 AM - Test_001_Login - INFO:  ====== WebDriver manager ======
+12/29/2021 08:53:17 AM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+12/29/2021 08:53:17 AM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+12/29/2021 08:53:17 AM - Test_001_Login - INFO: ****Started Login Test****
