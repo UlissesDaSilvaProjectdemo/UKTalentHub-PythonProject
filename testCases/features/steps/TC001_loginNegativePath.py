@@ -1,4 +1,3 @@
-import self
 from behave import *
 import time
 from selenium import webdriver
