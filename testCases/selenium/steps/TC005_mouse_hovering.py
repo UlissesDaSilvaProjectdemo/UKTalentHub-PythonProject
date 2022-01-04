@@ -16,12 +16,12 @@ def step_impl(context):
 @when('the user mouse hovering the element in the page')
 def step_impl(context):
     context.driver.execute_script("window.scrollBy(0, 600);")
-    time.sleep(2)
+    time.sleep(1)
     element = context.driver.find_element_by_id("mousehover")
     itemToClickLocator = "//*[@href="#top"]"
     actions = ActionChains(context.driver)
     actions.move_to_element(element).perform()
-    time.sleep(2)
+    time.sleep(1)
     topLink = driver.find_element_by_xpath(itemToClickLocator)
     time.sleep(3)
     actions.move_to_element(topLink).click().perform()
