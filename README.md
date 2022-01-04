@@ -5,12 +5,21 @@ https://www.python.org/downloads/
 Download Windows embeddable package (64-bit)
 Download Windows installer (64-bit)
 C:\Users\username
+
 ===========
 pycharm  
 https://www.jetbrains.com/pycharm/download/#section=windows 
+
 ============  
 set up environment variables - system path 
-Control Panel-->System and Security-->System - > Advanced system settings --> Enviroment Variable -->System Variables-->path-->Edit-->New-->paste the pyhton c:/path and click ok ===========  
+Control Panel-->System and Security-->System - > Advanced system settings --> Enviroment Variable -->System Variables-->path-->Edit-->New-->paste the pyhton c:/path
+
+--------------
+Pycharm ---> File -->setting --> plugin --> cucumber 
+Pycharm ---> File -->setting --> plugin --> gherkin
+Pycharm ---> File --> setting --> projectname -->Pyhton Interpeter--> set non-interpeter in the drop down. 
+
+--------------
 pip install selenium  :selinium libraries 
 pip install pytest : Unit Test framework 
 pip install pytest-html : PytestHtml report  
@@ -18,10 +27,13 @@ pip install pytest-xdist : run test in parallel
 pip install Openpyxl : MS Excel Support  
 pip install Allure-pytest  to generate reports 
 pip install webdriver-manager 
-pip install behave 
+pip install behave
+pip intall driver
+
 ============== 
 clone Framework: 
 git clone https://github.com/UlissesDaSilvaProjectdemo/UKTalentHub-PythonProject.git
+
 ============== 
 page object imports:#  
 import softest 
@@ -33,6 +45,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC 
 from selenium.webdriver import ActionChains 
+
 ============= 
 import testCases Imports:#  
 import pytest 
