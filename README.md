@@ -46,6 +46,7 @@ from utilities.customLogger import LogGen
 ================ 
 execution:
 behave testCases/features/TC001_loginNegativePath.feature
+behave testCases/selenium/TC004_drag_and_drop.feature
 pytest -s -v  --html=.Reports/report.html testCases/TC001_LoginTest.py --browser chrome
 pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
 pytest -s -v  --html=.Reports/report.html testCases/TC004_RestAPI.py --browser chrome
