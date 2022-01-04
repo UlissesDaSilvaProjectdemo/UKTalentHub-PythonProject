@@ -10,7 +10,6 @@ class ScrollingElement():
         driver.get("https://letskodeit.teachable.com/pages/practice")
         driver.implicitly_wait(3)
 
-
         # Scroll Down
         driver.execute_script("window.scrollBy(0, 1000);")
         time.sleep(3)
