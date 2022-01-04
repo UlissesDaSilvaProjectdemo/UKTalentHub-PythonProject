@@ -1,8 +1,12 @@
+import os
 import pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import IEDriverManager
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from webdriver_manager.opera import OperaDriverManager
+
 
 
 @pytest.fixture()
@@ -14,13 +18,27 @@ def setup(browser):
         print("Launching chrome browser.........")
 
     elif browser == 'firefox':
-        driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        #driver = webdriver.Firefox(executable_path="C:\\Users\\Ulisses.Dasilva\\driver\\geckodriver.exe")
+        #driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        driverLocation='C:\\Users\\Ulisses.Dasilva\\driver\\geckodriver.exe'
+        os.environ["webdriver.Firefox"] = driverLocation
+        driver = webdriver.Firefox(driverLocation)
+
+
+        driver.maximize_window()
         print("Launching firefox browser.........")
 
-    elif browser == 'IEBrowser':
-
+    elif browser == 'Ie':
         driver = webdriver.Ie(IEDriverManager().install())
-        print("Launching IEBrowser browser.........")
+        print("Launching Ie browser.........")
+
+    elif browser == 'Edge':
+        driver = webdriver.Edge(EdgeChromiumDriverManager().install())
+        print("Launching Edge browser.........")
+
+    elif browser == 'Opera':
+        driver = webdriver.Opera(executable_path=OperaDriverManager().install())
+        print("Launching Opera browser.........")
 
     return driver
 
@@ -35,10 +53,7 @@ def browser(request):  # This will return the Browser value to setup method
 
 
 
-
-
 ########### pytest HTML Report ################
-
 # It is hook for Adding Environment info to HTML Report
 def pytest_configure(config):
     config._metadata = {}  # API metadata

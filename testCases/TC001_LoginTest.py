@@ -33,7 +33,7 @@ class Test_001_Login:
 
 
         act_title = self.driver.title
-        if act_title == "xxxxLogin - My Store": #Login - My Store
+        if act_title == "xxxxLogin - My Store":#Login - My Store
             self.syslog.info("****Login test passed ****")
             self.driver.close()
             assert True

@@ -19,13 +19,11 @@ def step_impl(context):
 def step_impl(context):
     time.sleep(3)
     context.driver.implicitly_wait(3)
-
     fromElement = context.driver.find_element_by_xpath("//*[@id='draggable']")
     toElement = context.driver.find_element_by_xpath("//*[@id='droppable']")
     actions = ActionChains(context.driver)
     actions.drag_and_drop(fromElement,toElement).click().perform()
     #actions.click_and_hold(fromElement).move_to_element(toElement).release().perform()
-
 
 
 
