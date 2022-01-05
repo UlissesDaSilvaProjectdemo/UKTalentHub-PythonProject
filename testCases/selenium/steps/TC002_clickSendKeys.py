@@ -36,4 +36,8 @@ def select(context):
 
 @then('the user should be able to sendkeys action in the page.')
 def verify_sendkeys(context):
-    print('user able to send keys')
+    page_title = context.driver.title
+    if page_title == "Home | Let's Kode It":
+        assert True
+    else:
+        assert False

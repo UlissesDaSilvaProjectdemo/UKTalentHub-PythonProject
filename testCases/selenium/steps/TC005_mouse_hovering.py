@@ -30,4 +30,8 @@ def step_impl(context):
 
 @then('the user should be able to verify a element been mouse over in the page.')
 def step_impl(context):
-    print("Item Clicked")
+    page_title = context.driver.title
+    if page_title == "Practice Page":
+        assert True
+    else:
+        assert False

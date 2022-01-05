@@ -39,6 +39,10 @@ def step_impl(context):
 
 @then('the user should be able to select the radio button and checkbox  in the page.')
 def step_impl(context):
-    print('verify checkboxes and radio button')
+    page_title = context.driver.title
+    if page_title == "Practice Page":
+        assert True
+    else:
+        assert False
 
 

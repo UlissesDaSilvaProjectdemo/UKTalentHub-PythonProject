@@ -29,4 +29,8 @@ def step_impl(context):
 
 @then('the user should be able to verify a element been drag and dropped in the page.')
 def step_impl(context):
-    print('verify drag and drop')
+    page_title = context.driver.title
+    if page_title == "Droppable | jQuery UI":
+        assert True
+    else:
+        assert False

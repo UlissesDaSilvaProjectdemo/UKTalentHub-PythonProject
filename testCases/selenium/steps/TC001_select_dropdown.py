@@ -36,4 +36,8 @@ def step_impl(context):
 
 @then('the user should be able to verify the dropdown.')
 def step_impl(context):
-    print('verify choice')
+    page_title = context.driver.title
+    if page_title == "Practice Page":
+        assert True
+    else:
+        assert False
