@@ -19,6 +19,11 @@ Pycharm ---> File -->setting --> plugin --> cucumber
 Pycharm ---> File -->setting --> plugin --> gherkin
 Pycharm ---> File --> setting --> projectname -->Pyhton Interpeter--> set non-interpeter in the drop down. 
 
+-------------
+allure - report 
+https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
+unzip the file --> navigate to bin folder --> set the bin path into the enviroment variable
+
 --------------
 pip install selenium  :selinium libraries 
 pip install pytest : Unit Test framework 
