@@ -23,6 +23,9 @@ Pycharm ---> File --> setting --> projectname -->Pyhton Interpeter--> set non-in
 allure - report 
 https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
 unzip the file --> navigate to bin folder --> set the bin path into the enviroment variable
+pip install allure-pytest
+
+
 
 --------------
 pip install selenium  :selinium libraries 
