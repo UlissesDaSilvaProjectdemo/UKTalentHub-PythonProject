@@ -21,14 +21,11 @@ Pycharm ---> File --> setting --> projectname -->Pyhton Interpeter--> set non-in
 
 -------------
 allure - report 
+pip install allure-pytest
 https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
 unzip the file --> navigate to bin folder --> set the bin path into the enviroment variable
-Open CMD 
-C:\Users\Ulisses.Dasilva>allure serve  project absolute path ex: C:\Users\UKTalentHub-PythonProject\.Reports\AllureReports
-pip install allure-pytest
-
-
-
+Open CMD and type -->allure serve  project absolute path ex: C:\Users\UKTalentHub-PythonProject\.Reports\AllureReports
+ 
 --------------
 pip install selenium  :selinium libraries 
 pip install pytest : Unit Test framework 
