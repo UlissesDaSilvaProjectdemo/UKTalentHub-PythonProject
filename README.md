@@ -25,6 +25,13 @@ pip install allure-pytest
 https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
 unzip the file --> navigate to bin folder --> set the bin path into the enviroment variable
 Open CMD and type -->allure serve  project absolute path ex: C:\Users\UKTalentHub-PythonProject\.Reports\AllureReports
+pycharm IDE -->allure serve . Reports/AllureReports
+
+ 
+ --------------
+ Jenkins installation 
+ JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+ Jenkins --> https://www.jenkins.io/download/
  
 --------------
 pip install selenium  :selinium libraries 
