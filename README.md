@@ -34,7 +34,7 @@ pip install behave
 pip intall driver
 
 ============== 
-clone Framework: 
+clone Framework: GutHub
 git clone
 https://github.com/UlissesDaSilvaProjectdemo/UKTalentHub-PythonProject.git
 
@@ -89,11 +89,11 @@ or
 go to pycharm IDE -->allure serve . Reports/AllureReports
 
 ----------------
-5 - run example: - cucumber Allure-repports
+5 - run example: Pycharm IDE - cucumber Allure-repports
 behave -f allure_behave.formatter:AllureFormatter -o .Reports/name selenium/features
 
 ----------------
-6 - run example: - Pytest HTML reports 
+6 - run example: Pycharm IDE - Pytest HTML reports 
 pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
  
 ================
