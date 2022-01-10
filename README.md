@@ -1,6 +1,7 @@
 #UKTalentHUB
 ============ 
 pyhton 3.10 
+
 https://www.python.org/downloads/ 
 Download Windows embeddable package (64-bit)
 Download Windows installer (64-bit)
@@ -8,6 +9,7 @@ C:\Users\username
 
 ===========
 pycharm  
+
 https://www.jetbrains.com/pycharm/download/#section=windows 
 
 ============  
@@ -33,8 +35,8 @@ pip intall driver
 
 ============== 
 clone Framework: 
-
-git clone https://github.com/UlissesDaSilvaProjectdemo/UKTalentHub-PythonProject.git
+git clone
+https://github.com/UlissesDaSilvaProjectdemo/UKTalentHub-PythonProject.git
 
 ============== 
 page object imports:#  
@@ -61,6 +63,7 @@ from utilities.customLogger import LogGen
 
 ================ 
 execution:
+
 behave testCases/features/TC001_loginNegativePath.feature
 behave testCases/selenium/TC004_drag_and_drop.feature
 pytest -s -v  --html=.Reports/report.html testCases/TC001_LoginTest.py --browser chrome
