@@ -98,6 +98,8 @@ pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --br
  
 ================
  Jenkins installation 
+ 
  JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+ 
  Jenkins --> https://www.jenkins.io/download/
  
