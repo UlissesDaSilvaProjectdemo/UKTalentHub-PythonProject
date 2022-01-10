@@ -19,20 +19,6 @@ Pycharm ---> File -->setting --> plugin --> cucumber
 Pycharm ---> File -->setting --> plugin --> gherkin
 Pycharm ---> File --> setting --> projectname -->Pyhton Interpeter--> set non-interpeter in the drop down. 
 
--------------
-allure - report 
-pip install allure-pytest
-https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
-unzip the file --> navigate to bin folder --> set the bin path into the enviroment variable
-Open CMD and type -->allure serve  project absolute path ex: C:\Users\UKTalentHub-PythonProject\.Reports\AllureReports
-pycharm IDE -->allure serve . Reports/AllureReports
-
- 
- --------------
- Jenkins installation 
- JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
- Jenkins --> https://www.jenkins.io/download/
- 
 --------------
 pip install selenium  :selinium libraries 
 pip install pytest : Unit Test framework 
@@ -59,6 +45,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
+
 ============= 
 import testCases Imports:#  
 import pytest 
@@ -68,7 +55,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager import driver 
 from pageObjects.TC006_third_solutionPage import TC006_third_solutionPage 
 from utilities.readProperties import ReadConfig 
-from utilities.customLogger import LogGen 
+from utilities.customLogger import LogGen
+
 ================ 
 execution:
 behave testCases/features/TC001_loginNegativePath.feature
@@ -76,5 +64,35 @@ behave testCases/selenium/TC004_drag_and_drop.feature
 pytest -s -v  --html=.Reports/report.html testCases/TC001_LoginTest.py --browser chrome
 pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
 pytest -s -v  --html=.Reports/report.html testCases/TC004_RestAPI.py --browser chrome
-# UKTalentHub-PythonProject
 
+# UKTalentHub-PythonProject 
+Allure- reports 
+----------------
+1- install allure - report 
+pip install allure-pytest
+
+--------------
+2 - downloand allure repor 
+https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
+
+-------------
+3 - set enviroment variable --> unzip the dowloand file --> navigate to bin folder --> set the bin path into the system enviroment variable
+
+------------
+4 - Open CMD and type -->allure serve  project absolute path ex: C:\Users\UKTalentHub-PythonProject\.Reports\AllureReports
+or 
+go to pycharm IDE -->allure serve . Reports/AllureReports
+
+----------------
+5 - run example: - cucumber Allure-repports
+behave -f allure_behave.formatter:AllureFormatter -o .Reports/name selenium/features
+
+----------------
+6 - run example: - Pytest HTML reports 
+pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
+ 
+================
+ Jenkins installation 
+ JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+ Jenkins --> https://www.jenkins.io/download/
+ 
