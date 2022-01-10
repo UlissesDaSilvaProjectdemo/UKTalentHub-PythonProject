@@ -97,7 +97,8 @@ behave -f allure_behave.formatter:AllureFormatter -o .Reports/name selenium/feat
 pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
  
 ================
- Jenkins installation 
+
+Jenkins installation 
  
  JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
  
