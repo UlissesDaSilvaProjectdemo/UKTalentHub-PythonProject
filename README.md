@@ -12,6 +12,7 @@ https://www.jetbrains.com/pycharm/download/#section=windows
 
 ============  
 set up environment variables - system path 
+
 Control Panel-->System and Security-->System - > Advanced system settings --> Enviroment Variable -->System Variables-->path-->Edit-->New-->paste the pyhton c:/path
 
 --------------
@@ -32,6 +33,7 @@ pip intall driver
 
 ============== 
 clone Framework: 
+
 git clone https://github.com/UlissesDaSilvaProjectdemo/UKTalentHub-PythonProject.git
 
 ============== 
