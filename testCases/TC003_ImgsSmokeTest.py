@@ -12,7 +12,6 @@ class Test_001_Login:
             @pytest.mark.sanity
             @pytest.mark.regression
             def test_login(self, setup):
-
                 self.logger.info("****Started Login Test****")
                 self.driver = setup
                 self.driver.get(self.baseURL)

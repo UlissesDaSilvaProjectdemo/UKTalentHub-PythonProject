@@ -1,0 +1,7 @@
+[32mINFO    [0m WDM:logger.py:26 
+
+[32mINFO    [0m WDM:logger.py:26 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:26 Current google-chrome version is 96.0.4664
+[32mINFO    [0m WDM:logger.py:26 Get LATEST chromedriver version for 96.0.4664 google-chrome
+[32mINFO    [0m WDM:logger.py:26 Driver [C:\Users\Ulisses.Dasilva\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+[32mINFO    [0m root:TC002_LinksSmokeTest.py:20 ****Started Login Test****

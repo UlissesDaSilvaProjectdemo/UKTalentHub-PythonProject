@@ -5,9 +5,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
-
-
-
 @given('the user navigate to the radio button and checkbox  section of  the page')
 def step_impl(context):
     context.driver = webdriver.Chrome(ChromeDriverManager().install())

@@ -7,12 +7,10 @@ from webdriver_manager.microsoft import IEDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.opera import OperaDriverManager
 
-
-
 @pytest.fixture()
 def setup(browser):
     if browser == 'chrome':
-        #driver = webdriver.Chrome(executable_path=r"C:\path\to\chromedriver.exe")
+        #driver = webdriver.Chrome(executable_path=r"C:\Users\Ulisses.Dasilva\UKTalentHub-PythonProject\Drivers\chromedriver.exe")
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.maximize_window()
         print("Launching chrome browser.........")

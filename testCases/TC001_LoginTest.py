@@ -5,8 +5,6 @@ from utilities.readProperties import ReadConfig
 import utilities.custom_logger as cl
 import logging
 
-
-
 class Test_001_Login:
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUseremail()
@@ -28,8 +26,9 @@ class Test_001_Login:
         self.lp.signin_button() 
         self.lp.setPassword(self.password)
         self.lp.setUserName(self.username)
-        self.lp.login_btn()
         self.syslog.info("****Finished Login Test****")
+        self.lp.login_btn()
+
 
 
         act_title = self.driver.title

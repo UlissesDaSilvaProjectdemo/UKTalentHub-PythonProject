@@ -32,6 +32,7 @@ class LoginPage:
     def login_btn(self):
         time.sleep(1)
         self.driver.SeleniumDriver.elementClick(self._login_button,locatorType="//*[@id='SubmitLogin']")
+        self.driver.close()
 
 
 
