@@ -89,7 +89,7 @@ or
 go to pycharm IDE -->allure serve . Reports/AllureReports
 
 ----------------
-5 - run example: Pycharm IDE - cucumber Allure-repports
+5 - to create the file --> run example: Pycharm IDE - cucumber Allure-repports
 behave -f allure_behave.formatter:AllureFormatter -o .Reports/name selenium/features
 
 ----------------
@@ -103,4 +103,18 @@ Jenkins installation
  JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
  
  Jenkins --> https://www.jenkins.io/download/
+ 
+ --------------
+ Open AWS Account
+ open EC2 instances 
+ dowload keypair
+ navigate to dolowad location -->C:\Users\user.name\Downloads\ keypar.txt 
+ Open Gitbash
+ Open server location
+ copy EC2 instances IP adress into jenkins port 8080
+ login into jenkins
+ create job and run the pipeline
+ 
+ ----------
+ 
  
