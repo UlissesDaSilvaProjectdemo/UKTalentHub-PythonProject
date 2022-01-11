@@ -41,3 +41,4 @@ def verify_sendkeys(context):
         assert True
     else:
         assert False
+        context.driver.close()

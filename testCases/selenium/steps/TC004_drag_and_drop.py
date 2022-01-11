@@ -18,12 +18,14 @@ def step_impl(context):
 @when('the user drag and drop the element in the page')
 def step_impl(context):
     time.sleep(3)
-    context.driver.implicitly_wait(3)
+    context.driver.implicitly_wait(5)
     fromElement = context.driver.find_element_by_xpath("//*[@id='draggable']")
     toElement = context.driver.find_element_by_xpath("//*[@id='droppable']")
     actions = ActionChains(context.driver)
+    time.sleep(4)
     actions.drag_and_drop(fromElement,toElement).click().perform()
-    #actions.click_and_hold(fromElement).move_to_element(toElement).release().perform()
+    actions.click_and_hold(fromElement).move_to_element(toElement).release().perform()
+
 
 
 
@@ -34,3 +36,4 @@ def step_impl(context):
         assert True
     else:
         assert False
+        context.driver.close()

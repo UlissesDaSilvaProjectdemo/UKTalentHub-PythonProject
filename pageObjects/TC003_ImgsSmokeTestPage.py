@@ -56,6 +56,7 @@ class  ImgSmokeTest:
                     driver.execute_script("document.querySelector('.mye4qd').click();")
                     results_start = len(thumbnail_results)
                 return img_urls
+                self.driver.close()
 
 
 

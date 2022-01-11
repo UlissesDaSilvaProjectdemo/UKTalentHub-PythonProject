@@ -19,20 +19,17 @@ def step_impl(context):
     element = context.driver.find_element_by_id("carselect")
     sel = Select(element)
 
-    sel.select_by_value("benz")
+    sel.select_by_value("honda")
     print("Select Benz by value")
     time.sleep(2)
 
-    sel.select_by_index("2")
-    print("Select Honda by index")
-    time.sleep(2)
+    # sel.select_by_index("2")
+    # print("Select Honda by index")
+    # time.sleep(2)
 
-    sel.select_by_visible_text("BMW")
-    print("Select BMW by visible text")
-    time.sleep(2)
-
-    sel.select_by_index(2)
-    print("Select Honda by index")
+    # sel.select_by_visible_text("BMW")
+    # print("Select BMW by visible text")
+    # time.sleep(2)
 
 @then('the user should be able to verify the dropdown.')
 def step_impl(context):
@@ -41,3 +38,4 @@ def step_impl(context):
         assert True
     else:
         assert False
+        context.driver.close()
