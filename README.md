@@ -93,6 +93,7 @@ go to pycharm IDE -->allure serve . Reports/AllureReports
 behave -f allure_behave.formatter:AllureFormatter -o .Reports/name selenium/features
 
 ----------------
+HTML report 
 6 - run example: Pycharm IDE - Pytest HTML reports 
 pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
  
