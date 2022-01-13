@@ -30,7 +30,7 @@ def step_impl(context):
             searchBox = context.driver.find_element_by_id("search")
             searchBox.send_keys("python")
             time.sleep(3)
-            driver.close()
+            context.driver.close()
             break
     # Switch back to the parent handle
     context.driver.switch_to.window(parentHandle)

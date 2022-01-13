@@ -15,12 +15,11 @@ class TrelloApiTest(unittest.TestCase):
         first_card_id = self.create_card(list_id, name="first_card")
         second_card_id = self.create_card(list_id, name="second_card")
         third_card_id = self.create_card(list_id, name="third_card")
-        fourth_card_id = self.create_card(list_id, name="fourth_card")
 
         self.edit_card(second_card_id, name="Edit second card", desc=' add a new description')
         self.delete_card(first_card_id)
         self.add_comment_to_card(third_card_id, text=" third_card comment")
-        self.add_comment_to_card(fourth_card_id, text=" fourth_card comment")
+
 
     def tearDown(self):
         self.delete_board(self.board_id)

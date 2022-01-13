@@ -32,8 +32,6 @@ def step_impl(context):
     benzCheckbox = context.driver.find_element_by_id("benzcheck")
     benzCheckbox.click()
 
-
-
 @then('the user should be able to select the radio button and checkbox  in the page.')
 def step_impl(context):
     page_title = context.driver.title

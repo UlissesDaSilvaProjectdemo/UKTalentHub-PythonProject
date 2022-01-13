@@ -17,11 +17,10 @@ def setup(browser):
 
     elif browser == 'firefox':
         #driver = webdriver.Firefox(executable_path="C:\\Users\\Ulisses.Dasilva\\driver\\geckodriver.exe")
-        #driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         driverLocation='C:\\Users\\Ulisses.Dasilva\\driver\\geckodriver.exe'
         os.environ["webdriver.Firefox"] = driverLocation
         driver = webdriver.Firefox(driverLocation)
-
 
         driver.maximize_window()
         print("Launching firefox browser.........")
@@ -37,7 +36,6 @@ def setup(browser):
     elif browser == 'Opera':
         driver = webdriver.Opera(executable_path=OperaDriverManager().install())
         print("Launching Opera browser.........")
-
     return driver
 
 

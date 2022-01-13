@@ -22,11 +22,9 @@ def step_impl(context):
     actions = ActionChains(context.driver)
     actions.move_to_element(element).perform()
     time.sleep(1)
-    topLink = driver.find_element_by_xpath(itemToClickLocator)
+    topLink = context.driver.find_element_by_xpath(itemToClickLocator)
     time.sleep(3)
     actions.move_to_element(topLink).click().perform()
-    
-
 
 @then('the user should be able to verify a element been mouse over in the page.')
 def step_impl(context):
