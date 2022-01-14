@@ -38,4 +38,4 @@ def step_impl(context):
         assert True
     else:
         assert False
-        context.driver.close()
+

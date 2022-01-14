@@ -16,7 +16,6 @@ def setup(browser):
         print("Launching chrome browser.........")
 
     elif browser == 'firefox':
-       # driver = webdriver.Firefox(executable_path=r"C:\Users\Ulisses.Dasilva\driver\geckodriver-v0.30.0-win64 (1)\geckodriver.exe")
         driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         driver.maximize_window()
         print("Launching firefox browser.........")

@@ -13,8 +13,6 @@ def step_impl(context):
     context.driver.get("https://www.qualitest.com/contact/")
     context.driver.maximize_window()
 
-
-
 @when(u'the user should  be able to scrolling the element icon in the page')
 def step_impl(context):
     # Scroll Down

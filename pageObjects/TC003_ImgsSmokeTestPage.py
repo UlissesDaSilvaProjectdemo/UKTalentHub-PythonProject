@@ -1,17 +1,9 @@
 import requests
-import requests
 import urllib3
-import pytest
-from requests.exceptions import MissingSchema, InvalidSchema, InvalidURL
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from utilities.customLogger import LogGen
 from utilities.readProperties import ReadConfig
-
 
 
 class ImgSmokeTest:

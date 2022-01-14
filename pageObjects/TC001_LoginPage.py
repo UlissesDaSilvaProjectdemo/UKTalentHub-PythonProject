@@ -25,14 +25,14 @@ class LoginPage:
         self.driver.find_element_by_xpath(self.password_xpath).clear()
         self.driver.find_element_by_xpath(self.password_xpath).send_keys(password)
 
-    # def login_btn(self):
-    #     time.sleep(1)
-    #     self.driver.find_element_by_xpath(self.login_button_xpath).click()
-
     def login_btn(self):
         time.sleep(1)
-        self.driver.SeleniumDriver.elementClick(self._login_button,locatorType="//*[@id='SubmitLogin']")
-        self.driver.close()
+        self.driver.find_element_by_xpath(self.login_button_xpath).click()
+
+    # def login_btn(self):
+    #     time.sleep(1)
+    #     self.driver.SeleniumDriver.elementClick(self._login_button,locatorType="//*[@id='SubmitLogin']")
+    #     self.driver.close()
 
 
 

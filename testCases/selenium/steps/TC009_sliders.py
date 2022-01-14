@@ -15,7 +15,6 @@ def step_impl(context):
     context.driver.maximize_window()
     context.driver.switch_to.frame(0)
 
-
 @when('the user should slide the bar icon in the page')
 def step_impl(context):
 
@@ -28,7 +27,6 @@ def step_impl(context):
                 time.sleep(2)
             except:
                 print("Sliding failed on element")
-
 
 @then('the user should be able to verify the page.')
 def step_impl(context):

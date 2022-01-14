@@ -9,6 +9,8 @@ class Test_001_Login:
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUseremail()
     password = ReadConfig.getPassword()
+    Uktest = ReadConfig.Uktest()
+
     #logger = LogGen.loggen()
     syslog = cl.custom_Logger(logging.DEBUG)
 
@@ -23,11 +25,13 @@ class Test_001_Login:
         self.driver = setup
         self.driver.get(self.baseURL)
         self.lp = LoginPage(self.driver)
-        self.lp.signin_button() 
+        self.lp.signin_button(self.Uktest)
         self.lp.setPassword(self.password)
         self.lp.setUserName(self.username)
         self.syslog.info("****Finished Login Test****")
         self.lp.login_btn()
+
+
 
 
 

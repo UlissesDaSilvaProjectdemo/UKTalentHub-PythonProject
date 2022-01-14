@@ -153,3 +153,8 @@ class ReadConfig:
     def get_smoketestbaseURL():
         get_smoketestbaseURL = config.get('common info', 'get_smoketestbaseURL')
         return get_smoketestbaseURL
+
+    @staticmethod
+    def Uktest():
+        Uktest = config.get('common info', 'Uktest')
+        return Uktest
