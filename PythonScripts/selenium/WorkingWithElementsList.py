@@ -23,5 +23,18 @@ class WorkingWithElementsList():
                 radioButton.click()
                 time.sleep(2)
 
+    def testUnOrderlist(self):
+
+        baseUrl = "https://www.bbc.co.uk/sport"
+        driver = webdriver.Firefox()
+        driver.maximize_window()
+        driver.get(baseUrl)
+        driver.implicitly_wait(10)
+
+        skillsSection = self.driver.find_element_by_xpath("//*[@id='sp-nav-flyout'']/div[1]/ul[1]")
+        skillsList = skillsSection.find_elements_by_tag_name("li")
+        for skill in skillsList:
+            skill.find_elemdnt_by_xpath("//*[@id='sp-nav-flyout']/div[1]/ul[1]/li[5]").click()
+
 ff = WorkingWithElementsList()
 ff.testListOfElements()

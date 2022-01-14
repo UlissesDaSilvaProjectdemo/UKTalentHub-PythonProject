@@ -16,12 +16,8 @@ def setup(browser):
         print("Launching chrome browser.........")
 
     elif browser == 'firefox':
-        #driver = webdriver.Firefox(executable_path="C:\\Users\\Ulisses.Dasilva\\driver\\geckodriver.exe")
+       # driver = webdriver.Firefox(executable_path=r"C:\Users\Ulisses.Dasilva\driver\geckodriver-v0.30.0-win64 (1)\geckodriver.exe")
         driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
-        driverLocation='C:\\Users\\Ulisses.Dasilva\\driver\\geckodriver.exe'
-        os.environ["webdriver.Firefox"] = driverLocation
-        driver = webdriver.Firefox(driverLocation)
-
         driver.maximize_window()
         print("Launching firefox browser.........")
 
@@ -56,7 +52,6 @@ def pytest_configure(config):
     config._metadata['Project Name'] = 'UKTalentHub'
     config._metadata['Module Name'] = 'Customers'
     config._metadata['Tester'] = 'Ulisses Da Silva'
-
 
 # It is hook for delete/Modify Environment info to HTML Report
 @pytest.mark.optionalhook

@@ -23,13 +23,13 @@ def step_impl(context):
     print("Select Benz by value")
     time.sleep(2)
 
-    # sel.select_by_index("2")
-    # print("Select Honda by index")
-    # time.sleep(2)
+    sel.select_by_index("2")
+    print("Select Honda by index")
+    time.sleep(2)
 
-    # sel.select_by_visible_text("BMW")
-    # print("Select BMW by visible text")
-    # time.sleep(2)
+    sel.select_by_visible_text("BMW")
+    print("Select BMW by visible text")
+    time.sleep(2)
 
 @then('the user should be able to verify the dropdown.')
 def step_impl(context):
