@@ -15,7 +15,7 @@ https://www.jetbrains.com/pycharm/download/#section=windows
 ============  
 set up environment variables - system path 
 
-Control Panel-->System and Security-->System - > Advanced system settings --> Enviroment Variable -->System Variables-->path-->Edit-->New-->paste the pyhton c:/path
+Control Panel-->System and Security--> System - > Advanced system settings --> Enviroment Variable -->System Variables-->path-->Edit-->New-->paste the pyhton c:/path
 
 --------------
 Pycharm ---> File -->setting --> plugin --> cucumber 
@@ -23,6 +23,7 @@ Pycharm ---> File -->setting --> plugin --> gherkin
 Pycharm ---> File --> setting --> projectname -->Pyhton Interpeter--> set non-interpeter in the drop down. 
 
 --------------
+
 pip install selenium  :selinium libraries 
 pip install pytest : Unit Test framework 
 pip install pytest-html : PytestHtml report  
@@ -84,24 +85,22 @@ https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
 3 - set enviroment variable --> unzip the dowloand file --> navigate to bin folder --> set the bin path into the system enviroment variable
 
 ------------
-4 - Open CMD and type -->allure serve  project absolute path ex: C:\Users\UKTalentHub-PythonProject\.Reports\AllureReports
+4 - Open CMD and type -->allure serve and project absolute path ex: C:\Users\UKTalentHub-PythonProject\.Reports\AllureReports
 or 
-go to pycharm IDE -->allure serve . Reports/AllureReports
+go to pycharm IDE Terminal -->allure serve . Reports/AllureReports
 
 ----------------
-5 - to create the file --> run example: Pycharm IDE - cucumber Allure-repports
-behave -f allure_behave.formatter:AllureFormatter -o .Reports/name selenium/features
+5 - to create the file --> run example: Pycharm IDE - cucumber Allure-repports <-f allure_behave.formatter:AllureFormatter -o>
+behave -f allure_behave.formatter:AllureFormatter -o .Reports/file_name/selenium/features
 
 ----------------
 HTML report 
-6 - run example: Pycharm IDE - Pytest HTML reports 
+6 - run example: Pycharm IDE - Pytest HTML reports <--html=.Reports/report.html>
 pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
  
 ================
-
 Jenkins installation 
 JDK - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
- 
  Jenkins --> https://www.jenkins.io/download/
  
  --------------
