@@ -19,7 +19,7 @@ class Test_001_Login:
                 self.lp.broken_image()
 
                 act_title = self.driver.title
-                if act_title == "The Internet ":  # Page title
+                if act_title == "BBC - Home":  # Page title
                     self.logger.info("****Login test passed ****")
                     self.driver.close()
                     assert True

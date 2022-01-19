@@ -27,7 +27,7 @@ class  SmokeTest:
         for link in links:
             r = requests.head(link.get_attribute('href'))
             print(link.get_attribute('href'), r.status_code)
-        self.driver.close()
+
 
 
 

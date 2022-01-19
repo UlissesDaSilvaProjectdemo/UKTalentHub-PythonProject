@@ -38,7 +38,7 @@ class Test_001_Login:
     @allure.severity(severity_level="CRITICAL")
     def page_title_assertion(self):
         act_title = self.driver.title
-        if act_title == "xxxBBC - Home":  #
+        if act_title == "BBC - Home":  #
             self.logger.info("****Login test passed ****")
             self.driver.close()
             assert True
