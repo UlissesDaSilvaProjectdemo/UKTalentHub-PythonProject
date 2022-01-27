@@ -43,7 +43,8 @@ class Test_001_Login:
         else:
             self.syslog.error("****Login test failed ****")
             self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
-            self.driver.close()
+            #self.driver.close()
+
             assert False
 
 
