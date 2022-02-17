@@ -40,8 +40,6 @@ class ReadConfig:
         textbox_username_id = config.get('common info', 'textbox_username_id')
         return textbox_username_id
 
-
-
     @staticmethod
     def login_with_atlassian_id():
         login_with_atlassian_id = config.get('common info', 'login_with_atlassian_id')
@@ -198,6 +196,16 @@ class ReadConfig:
         return getLocation
 
     @staticmethod
-    def getRadioOption():
-        getRadioOption = config.get('common info', 'radiobtn')
-        return getRadioOption
+    def get_radio_option():
+        get_radio_option = config.get('common info', 'radiobtn')
+        return get_radio_option
+
+    @staticmethod
+    def get_email():
+        get_email = config.get('common info', 'email')
+        return get_email
+
+    @staticmethod
+    def get_thankyou_msg():
+        get_thankyou_msg = config.get('common info', 'thankyou_msg')
+        return get_thankyou_msg
