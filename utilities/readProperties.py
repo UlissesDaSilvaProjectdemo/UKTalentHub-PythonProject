@@ -147,10 +147,57 @@ class ReadConfig:
         account_sign_up = config.get('common info', 'account_sign_up')
         return account_sign_up
 
-
-
     @staticmethod
     def get_smoketestbaseURL():
         get_smoketestbaseURL = config.get('common info', 'get_smoketestbaseURL')
         return get_smoketestbaseURL
 
+    @staticmethod
+    def clickOnContactUs():
+        contact_us = config.get('common info', 'btn_contact_us')
+        return contact_us
+
+    @staticmethod
+    def GetSubmitButton():
+        GetSubmitButton = config.get('common info', 'btn_submit')
+        return GetSubmitButton
+
+    @staticmethod
+    def getFirstName():
+        getFirstName = config.get('common info', 'firstname')
+        return getFirstName
+
+    @staticmethod
+    def getFirstName():
+        getFirstName = config.get('common info', 'firstname')
+        return getFirstName
+
+    @staticmethod
+    def getLastName():
+        getLastName = config.get('common info', 'lastname')
+        return getLastName
+
+    @staticmethod
+    def getPhone():
+        getPhone = config.get('common info', 'phone')
+        return getPhone
+
+    @staticmethod
+    def getCompanyName():
+        getCompanyName = config.get('common info', 'companyname')
+        return getCompanyName
+
+    @staticmethod
+    def getHelpSectionText():
+        getHelpSectionText = config.get('common info', 'textarea')
+        return getHelpSectionText
+
+    @staticmethod
+    def getLocation():
+        getLocation = config.get('common info', 'location')
+        return getLocation
+
+    @staticmethod
+    def getRadioOption():
+        getRadioOption = config.get('common info', 'radiobtn')
+        return getRadioOption
