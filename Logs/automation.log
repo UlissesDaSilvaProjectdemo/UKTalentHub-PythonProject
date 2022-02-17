@@ -304,3 +304,19 @@
 01/18/2022 05:24:35 PM - Test_001_Login - INFO: ****Started Login Test****
 01/18/2022 05:24:44 PM - Test_001_Login - INFO: ****Finished Login Test****
 01/18/2022 05:24:46 PM - Test_001_Login - ERROR: ****Login test failed ****
+01/31/2022 02:14:18 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+01/31/2022 02:14:18 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+01/31/2022 02:14:18 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+01/31/2022 02:14:18 PM - Test_001_Login - INFO: ****Started Login Test****
+01/31/2022 04:32:09 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+01/31/2022 04:32:09 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+01/31/2022 04:32:09 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+01/31/2022 04:32:09 PM - Test_001_Login - INFO: ****Started Login Test****
+01/31/2022 04:32:29 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+01/31/2022 04:32:29 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+01/31/2022 04:32:29 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+01/31/2022 04:32:29 PM - Test_001_Login - INFO: ****Started Login Test****
+02/01/2022 05:47:50 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/01/2022 05:47:50 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+02/01/2022 05:47:50 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/01/2022 05:47:50 PM - Test_001_Login - INFO: ****Started Login Test****
