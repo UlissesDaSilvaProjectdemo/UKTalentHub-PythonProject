@@ -16,9 +16,10 @@ Feature: User launches Qualitest site and explores
       When  the user enters first name
       And   the user enters last name
       And   the user enters company name
+      And   the user selects what he wants to talk about
+      And   the user enters email
       And   the user enters phone number
       And   the user enters location
-      And   the user selects what he wants to talk about
       And   the user fills how can we help section
       And   the user clicks on Submit button
       Then  the user receives a Thank you message
