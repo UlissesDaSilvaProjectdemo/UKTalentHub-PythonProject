@@ -26,6 +26,7 @@ class Test_001_Login:
         self.driver.get(self.baseURL)
         self.lp = LoginPage(self.driver)
         self.lp.signin_button()
+
         self.lp.setPassword(self.password)
         self.lp.setUserName(self.username)
         self.syslog.info("****Finished Login Test****")

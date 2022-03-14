@@ -6,9 +6,6 @@ from allure_commons.types import AttachmentType
 import allure
 
 
-
-
-
 @allure.description('Test allure report - allure.severity_level.NORMAL')
 @allure.severity(severity_level="NORMAL")
 @pytest.mark.sanity
