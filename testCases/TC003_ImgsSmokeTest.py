@@ -9,6 +9,7 @@ class Test_001_Login:
             password = ReadConfig.getPassword()
             logger = LogGen.loggen()
 
+
             @pytest.mark.sanity
             @pytest.mark.regression
             def test_login(self, setup):

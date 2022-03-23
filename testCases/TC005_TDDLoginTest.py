@@ -34,9 +34,7 @@ class Test_002_DDT_Login():
             self.lp.login_btn()
 
 
-
             time.sleep(5)
-
             act_title = self.driver.title
             exp_title = "My account - My Store" #Login - My Store
             if act_title == exp_title:
