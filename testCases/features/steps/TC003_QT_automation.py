@@ -96,7 +96,7 @@ def navigate(context):
 @when('the user enters first name')
 def step_impl(context):
     context.driver.implicitly_wait(100)
-    context.driver.find_element_by_xpath(firstname).send_keys("test")
+    context.driver.find_element_by_xpath(firstname).send_keys("tets")
 
 
 @when('the user enters last name')

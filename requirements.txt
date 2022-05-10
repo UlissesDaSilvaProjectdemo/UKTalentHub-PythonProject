@@ -27,3 +27,5 @@ toml==0.10.2
 tqdm==4.62.3
 urllib3==1.26.7
 webdriver-manager==3.4.2
+
+configparser~=5.2.0
