@@ -23,3 +23,5 @@ Feature: User launches Qualitest site and explores
       And   the user fills how can we help section
       And   the user clicks on Submit button
       Then  the user receives a Thank you message
+
+      #d
