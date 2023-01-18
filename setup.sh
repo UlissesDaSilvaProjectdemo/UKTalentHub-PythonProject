@@ -17,7 +17,7 @@ rem pytest -s -v testCases/TC004_RestAPI.py
 echo "Running the pytest solution.."
 
 rem pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
-rem pytest -s -v  --html=.Reports/report.html testCases/TC003_ImgsSmokeTest.py --browser chrome#
+rem pytest -s -v  --html=.Reports/report.html testCases/TC003_ImgsSmokeTest.py --browser chrome
 rem pytest -s -v  --html=.Reports/report.html testCases/TC004_RestAPI.py --browser chrome
 
 echo "Running the BDD tests.."

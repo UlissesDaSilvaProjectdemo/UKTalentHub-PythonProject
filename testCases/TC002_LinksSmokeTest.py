@@ -2,12 +2,12 @@ import pytest
 from pageObjects.TC002_LinksSmokeTestPage import SmokeTest
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
-from allure_commons.types import AttachmentType
-import allure
+#from allure_commons.types import AttachmentType
+#import allure
 
 
-@allure.description('Test allure report - allure.severity_level.NORMAL')
-@allure.severity(severity_level="NORMAL")
+#@allure.description('Test allure report - allure.severity_level.NORMAL')
+#@allure.severity(severity_level="NORMAL")
 @pytest.mark.sanity
 @pytest.mark.regression
 class Test_001_Login:
@@ -16,8 +16,8 @@ class Test_001_Login:
     password = ReadConfig.getPassword()
     logger = LogGen.loggen()
 
-    @allure.description('Test allure report - allure.severity_level.NORMAL')
-    @allure.severity(severity_level="NORMAL")
+    #@allure.description('Test allure report - allure.severity_level.NORMAL')
+    #@allure.severity(severity_level="NORMAL")
     @pytest.mark.sanity
     @pytest.mark.regression
     def test_login(self, setup):
@@ -28,11 +28,11 @@ class Test_001_Login:
         self.lp.broken_link()
 
     def driverget_screenshot_as_png(self):
-        allure.attached(self.driverget_screenshot_as_png(), name="testloginScreen",
-                         attachment_type=AttachmentType.png)
+        #allure.attached(self.driverget_screenshot_as_png(), name="testloginScreen",
+                         #attachment_type=AttachmentType.png)
         pass
 
-    @allure.severity(severity_level="CRITICAL")
+   # @allure.severity(severity_level="CRITICAL")
     def page_title_assertion(self):
         act_title = self.driver.title
         if act_title == "BBC - Home":  #

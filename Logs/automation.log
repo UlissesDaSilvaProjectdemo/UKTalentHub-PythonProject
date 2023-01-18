@@ -320,3 +320,7 @@
 02/01/2022 05:47:50 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
 02/01/2022 05:47:50 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
 02/01/2022 05:47:50 PM - Test_001_Login - INFO: ****Started Login Test****
+05/20/2022 08:01:39 AM - Test_001_Login - INFO:  ====== WebDriver manager ======
+05/20/2022 08:01:39 AM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+05/20/2022 08:01:39 AM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+05/20/2022 08:01:39 AM - Test_001_Login - INFO: ****Started Login Test****

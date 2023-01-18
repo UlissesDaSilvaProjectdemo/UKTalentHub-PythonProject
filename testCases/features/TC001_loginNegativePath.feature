@@ -9,13 +9,15 @@ Feature: the user would like to login into the application
     Then  the user close the browser
 
     Examples:
-      | username           | password        |
-      | admin@gmail.com    | admin123!       |
-      | admin34@yahoo.com  | admin1965@      |
-      | userXZY@gmailcom   | userXZY76&      |
-      | novauser@gmail.com | nova@123$       |
-      | myser@gmail.com    | meuser@23*&     |
-      | myserxxx@gmail.com | mexxxxuser@23*& |
+      | username              | password        |
+      | admin@gmail.com       | admin123!       |
+      | admin34@yahoo.com     | admin1965@      |
+      | userXZY@gmailcom      | userXZY76&      |
+      | novauser@gmail.com    | nova@123$       |
+      | myser@gmail.com       | meuser@23*&     |
+      | myserxxx@gmail.com    | mexxxxuser@23*& |
+      | myserxtttxx@gmail.com | mexxxxuser@23*& |
+
 
 
 

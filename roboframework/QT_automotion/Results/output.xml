@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220510 10:35:52.839" rpa="false" schemaversion="2">
+<suite id="s1" name="Qualitest test" source="C:\Users\carlos.picon\Development\robot-scripts\UKTalentHub-PythonProject\testCases\roboframework\QT_automotion\Tests\Qualitest_test.robot">
+<test id="s1-t1" name="Qualitest Contact Form">
+<kw name="Begin Web Test" library="common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220510 10:35:53.089" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220510 10:35:53.089" endtime="20220510 10:35:54.981"/>
+</kw>
+<status status="PASS" starttime="20220510 10:35:53.089" endtime="20220510 10:35:54.982"/>
+</kw>
+<kw name="Load" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${WEB_PAGE}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220510 10:35:54.985" level="INFO">Opening url 'http://qualitestgroup.com'</msg>
+<status status="PASS" starttime="20220510 10:35:54.984" endtime="20220510 10:35:57.299"/>
+</kw>
+<status status="PASS" starttime="20220510 10:35:54.984" endtime="20220510 10:35:57.300"/>
+</kw>
+<kw name="Verify Page Loaded" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Enabling digital transformation. Touching lives.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220510 10:35:57.300" endtime="20220510 10:35:57.346"/>
+</kw>
+<status status="PASS" starttime="20220510 10:35:57.300" endtime="20220510 10:35:57.347"/>
+</kw>
+<kw name="Maximize_Page" library="LandingPage">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220510 10:35:57.347" endtime="20220510 10:35:57.510"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:35:59.516" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220510 10:35:57.510" endtime="20220510 10:35:59.516"/>
+</kw>
+<status status="PASS" starttime="20220510 10:35:57.347" endtime="20220510 10:35:59.517"/>
+</kw>
+<kw name="Click &quot;Contact&quot; in TopNav" library="QualitestApp">
+<kw name="Click on Contact" library="TopNav">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Contact_Button}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220510 10:35:59.521" level="INFO">Clicking link 'xpath=//a[@class='main-nav-btn']'.</msg>
+<status status="PASS" starttime="20220510 10:35:59.520" endtime="20220510 10:36:01.002"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:03.011" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220510 10:36:01.003" endtime="20220510 10:36:03.011"/>
+</kw>
+<status status="PASS" starttime="20220510 10:35:59.520" endtime="20220510 10:36:03.011"/>
+</kw>
+<status status="PASS" starttime="20220510 10:35:59.519" endtime="20220510 10:36:03.011"/>
+</kw>
+<kw name="Scroll Down 1" library="QualitestApp">
+<kw name="Scroll Down Page" library="ContactForm">
+<arg>0,500</arg>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${CORDS})</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220510 10:36:03.013" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220510 10:36:03.012" endtime="20220510 10:36:03.031"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:05.036" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220510 10:36:03.032" endtime="20220510 10:36:05.036"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:03.012" endtime="20220510 10:36:05.036"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:03.012" endtime="20220510 10:36:05.036"/>
+</kw>
+<kw name="Input &quot;name&quot; in form" library="QualitestApp">
+<kw name="Fill_Out_Box" library="ContactForm">
+<arg>${Name_locator}</arg>
+<arg>Anthony</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:05.039" level="INFO">Typing text 'Anthony' into text field 'id=firstname-34dd68e0-b077-4e95-9243-b861f3f2fd7d'.</msg>
+<status status="PASS" starttime="20220510 10:36:05.038" endtime="20220510 10:36:05.169"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.75s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:05.928" level="INFO">Slept 750 milliseconds</msg>
+<status status="PASS" starttime="20220510 10:36:05.169" endtime="20220510 10:36:05.928"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:05.038" endtime="20220510 10:36:05.928"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:05.038" endtime="20220510 10:36:05.928"/>
+</kw>
+<kw name="Input &quot;last name&quot; in form" library="QualitestApp">
+<kw name="Fill_Out_Box" library="ContactForm">
+<arg>${LastName_locator}</arg>
+<arg>Miller</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:05.930" level="INFO">Typing text 'Miller' into text field 'id=lastname-34dd68e0-b077-4e95-9243-b861f3f2fd7d'.</msg>
+<status status="PASS" starttime="20220510 10:36:05.929" endtime="20220510 10:36:06.034"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.75s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:06.794" level="INFO">Slept 750 milliseconds</msg>
+<status status="PASS" starttime="20220510 10:36:06.034" endtime="20220510 10:36:06.794"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:05.929" endtime="20220510 10:36:06.794"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:05.929" endtime="20220510 10:36:06.795"/>
+</kw>
+<kw name="Input &quot;company&quot; in form" library="QualitestApp">
+<kw name="Fill_Out_Box" library="ContactForm">
+<arg>${Company_locator}</arg>
+<arg>Castellar Ltd</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:06.798" level="INFO">Typing text 'Castellar Ltd' into text field 'id=company-34dd68e0-b077-4e95-9243-b861f3f2fd7d'.</msg>
+<status status="PASS" starttime="20220510 10:36:06.797" endtime="20220510 10:36:06.948"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.75s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:07.712" level="INFO">Slept 750 milliseconds</msg>
+<status status="PASS" starttime="20220510 10:36:06.948" endtime="20220510 10:36:07.712"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:06.797" endtime="20220510 10:36:07.712"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:06.796" endtime="20220510 10:36:07.712"/>
+</kw>
+<kw name="Click on radio button" library="QualitestApp">
+<kw name="Select in the button" library="ContactForm">
+<arg>what_would_you_like_to_talk_about_</arg>
+<arg>Partnership Inquiries</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220510 10:36:07.715" level="INFO">Selecting 'Partnership Inquiries' from radio button 'what_would_you_like_to_talk_about_'.</msg>
+<status status="PASS" starttime="20220510 10:36:07.715" endtime="20220510 10:36:07.825"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:07.714" endtime="20220510 10:36:07.825"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:07.714" endtime="20220510 10:36:07.825"/>
+</kw>
+<kw name="Scroll Down 2" library="QualitestApp">
+<kw name="Scroll Down Page" library="ContactForm">
+<arg>0,750</arg>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${CORDS})</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220510 10:36:07.827" level="INFO">Executing JavaScript:
+window.scrollTo(0,750)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220510 10:36:07.826" endtime="20220510 10:36:07.835"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:09.836" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220510 10:36:07.835" endtime="20220510 10:36:09.836"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:07.826" endtime="20220510 10:36:09.836"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:07.826" endtime="20220510 10:36:09.837"/>
+</kw>
+<kw name="Input &quot;email&quot; in form" library="QualitestApp">
+<kw name="Fill_Out_Box" library="ContactForm">
+<arg>${Email_locator}</arg>
+<arg>AMillerC@amazon.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:09.841" level="INFO">Typing text 'AMillerC@amazon.com' into text field 'id=email-34dd68e0-b077-4e95-9243-b861f3f2fd7d'.</msg>
+<status status="PASS" starttime="20220510 10:36:09.840" endtime="20220510 10:36:09.992"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.75s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:10.749" level="INFO">Slept 750 milliseconds</msg>
+<status status="PASS" starttime="20220510 10:36:09.992" endtime="20220510 10:36:10.749"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:09.839" endtime="20220510 10:36:10.750"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:09.839" endtime="20220510 10:36:10.750"/>
+</kw>
+<kw name="Input &quot;phone&quot; in form" library="QualitestApp">
+<kw name="Fill_Out_Box" library="ContactForm">
+<arg>${Phone_locator}</arg>
+<arg>07748375614</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:10.754" level="INFO">Typing text '07748375614' into text field 'id=phone-34dd68e0-b077-4e95-9243-b861f3f2fd7d'.</msg>
+<status status="PASS" starttime="20220510 10:36:10.752" endtime="20220510 10:36:10.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.75s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:11.664" level="INFO">Slept 750 milliseconds</msg>
+<status status="PASS" starttime="20220510 10:36:10.911" endtime="20220510 10:36:11.664"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:10.751" endtime="20220510 10:36:11.664"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:10.751" endtime="20220510 10:36:11.665"/>
+</kw>
+<kw name="Selecting checkbox" library="QualitestApp">
+<kw name="Select your Checkbox" library="ContactForm">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="location-34dd68e0-b077-4e95-9243-b861f3f2fd7d"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:11.668" level="INFO">Clicking element '//*[@id="location-34dd68e0-b077-4e95-9243-b861f3f2fd7d"]'.</msg>
+<status status="PASS" starttime="20220510 10:36:11.668" endtime="20220510 10:36:11.774"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:12.780" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220510 10:36:11.774" endtime="20220510 10:36:12.780"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//option[@value='North America']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:12.780" level="INFO">Clicking element '//option[@value='North America']'.</msg>
+<status status="PASS" starttime="20220510 10:36:12.780" endtime="20220510 10:36:12.836"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:13.848" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220510 10:36:12.836" endtime="20220510 10:36:13.848"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:11.666" endtime="20220510 10:36:13.848"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:11.666" endtime="20220510 10:36:13.849"/>
+</kw>
+<kw name="Srcoll Down 3" library="QualitestApp">
+<kw name="Scroll Down Page" library="ContactForm">
+<arg>0,1000</arg>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${CORDS})</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220510 10:36:13.853" level="INFO">Executing JavaScript:
+window.scrollTo(0,1000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220510 10:36:13.852" endtime="20220510 10:36:13.880"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:15.890" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220510 10:36:13.880" endtime="20220510 10:36:15.890"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:13.851" endtime="20220510 10:36:15.890"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:13.850" endtime="20220510 10:36:15.891"/>
+</kw>
+<kw name="Input &quot;text&quot; in form" library="QualitestApp">
+<kw name="Fill_Out_Box" library="ContactForm">
+<arg>${Text_locator}</arg>
+<arg>"Just testing this form"</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:15.895" level="INFO">Typing text '"Just testing this form"' into text field 'id=message-34dd68e0-b077-4e95-9243-b861f3f2fd7d'.</msg>
+<status status="PASS" starttime="20220510 10:36:15.894" endtime="20220510 10:36:16.052"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.75s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:16.803" level="INFO">Slept 750 milliseconds</msg>
+<status status="PASS" starttime="20220510 10:36:16.052" endtime="20220510 10:36:16.803"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:15.893" endtime="20220510 10:36:16.804"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:15.892" endtime="20220510 10:36:16.804"/>
+</kw>
+<kw name="Click on Submit button" library="QualitestApp">
+<kw name="Submit" library="ContactForm">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220510 10:36:16.807" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20220510 10:36:16.807" endtime="20220510 10:36:16.944"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220510 10:36:21.953" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220510 10:36:16.944" endtime="20220510 10:36:21.953"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:16.806" endtime="20220510 10:36:21.954"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:16.806" endtime="20220510 10:36:21.954"/>
+</kw>
+<kw name="Verify Page Loaded" library="ThanksPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Thanks for contacting us.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220510 10:36:21.955" endtime="20220510 10:36:22.014"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:21.954" endtime="20220510 10:36:22.014"/>
+</kw>
+<kw name="End Web Test" library="common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220510 10:36:22.015" endtime="20220510 10:36:24.280"/>
+</kw>
+<status status="PASS" starttime="20220510 10:36:22.015" endtime="20220510 10:36:24.280"/>
+</kw>
+<status status="PASS" starttime="20220510 10:35:53.088" endtime="20220510 10:36:24.281"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" starttime="20220510 10:35:52.843" endtime="20220510 10:36:24.285"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Qualitest test">Qualitest test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
