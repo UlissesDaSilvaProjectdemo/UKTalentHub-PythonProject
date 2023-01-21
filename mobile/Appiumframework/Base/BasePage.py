@@ -2,7 +2,7 @@ import allure
 from allure_commons.types import AttachmentType
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-import AppiumFrameWork.utilities.CustomLogger as cl
+import mobile.AppiumFrameWork.utilities.CustomLogger as cl
 import time
 
 
@@ -66,3 +66,40 @@ class BasePage:
         except:
             self.log.info(
                 "Unable to click on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+
+    def sendText(self, text, locatorValue, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            element = self.getElement(locatorValue, locatorType)
+            element.send_keys(text)
+            self.log.info(
+                "Send text  on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+        except:
+            self.log.info(
+                "Unable to send text on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+
+    def isDisplayed(self, locatorValue, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            element = self.getElement(locatorValue, locatorType)
+            element.is_displayed()
+            self.log.info(
+                " Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + "is displayed ")
+            return True
+        except:
+            self.log.info(
+                " Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + " is not displayed")
+            return False
+
+    def screenShot(self, screenshotName):
+        fileName = screenshotName + "_" + (time.strftime("%d_%m_%y_%H_%M_%S")) + ".png"
+        screenshotDirectory = "../screenshots/"
+        screenshotPath = screenshotDirectory + fileName
+        try:
+            self.driver.save_screenshot(screenshotPath)
+            self.log.info("Screenshot save to Path : " + screenshotPath)
+
+        except:
+            self.log.info("Unable to save Screenshot to the Path : " + screenshotPath)
