@@ -1,12 +1,12 @@
 # 1. Import the files
 import  unittest
-from AppiumFrameWork.tests.LoginTest import LoginTest
-from AppiumFrameWork.tests.ContactUsFormTest import ContactFormTest
+from mobile.Appiumframework.Test.LoginPageTest import LoginPageTest
+from mobile.Appiumframework.Test.ContatUsFormTest import ContactFormTest
 
 
 # 2. Create the object of the class using unitTest
 cf = unittest.TestLoader().loadTestsFromTestCase(ContactFormTest)
-gt = unittest.TestLoader().loadTestsFromTestCase(LoginTest)
+gt = unittest.TestLoader().loadTestsFromTestCase(LoginPageTest)
 
 # 3. Create TestSuite
 regressionTest = unittest.TestSuite([cf,gt])

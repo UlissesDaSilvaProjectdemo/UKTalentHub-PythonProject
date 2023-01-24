@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager import driver
+
 
 
 class LoginPage:

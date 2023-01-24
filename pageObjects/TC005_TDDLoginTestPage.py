@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.support.wait import WebDriverWait
-#from webdriver_manager import driver
+
 
 class LoginPage:
     signin_button_xpath = "//*[@id='header']/div[2]/div/div/nav/div[1]/a"

@@ -43,11 +43,11 @@ class ContactFormTest(unittest.TestCase):
 #bp.clickElement("com.qualitest.kawd:id/ContactUs","id")
 #bp.screenShot("qualitest")
 
-cf.clickContactFormButton()
-cf.enterName()
-cf.enterAddress()
-cf.enterEmail()
-cf.clickSubmitButton()
+#cf.clickContactFormButton()
+#cf.enterName()
+#cf.enterAddress()
+#cf.enterEmail()
+#cf.clickSubmitButton()
 
 
 

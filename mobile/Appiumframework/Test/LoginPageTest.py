@@ -1,8 +1,8 @@
 import unittest
 import pytest
-import AppiumFrameWork.utilities.CustomLogger as cl
-from AppiumFrameWork.base.BasePage import BasePage
-from AppiumFrameWork.pages.LoginPage import LoginPageTest
+import mobile.AppiumFrameWork.utilities.CustomLogger as cl
+from mobile.Appiumframework.Base.BasePage import BasePage
+from mobile.Appiumframework.Test import LoginPageTest
 
 
 @pytest.mark.usefixtures("beforeClass", "beforeMethod")
