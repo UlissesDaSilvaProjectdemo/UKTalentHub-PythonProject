@@ -1,8 +1,8 @@
 import requests
 
 payload = {
-    "name": "morpheus_Automation",
-    "job": "leader_Automation"
+    "name": "morpheus_Automation_PATCH",
+    "job": "leader_Automation_PATCH"
 }
 
 resp = requests.patch("https://reqres.in/api/users/2", data=payload)

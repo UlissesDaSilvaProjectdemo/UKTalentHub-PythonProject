@@ -5,6 +5,7 @@ from mobile.Appiumframework.Base.DriverClass import Driver
 from mobile.Appiumframework.Pages.ContactsForm import ContactForm
 from mobile.Appiumframework.Utilities.customlogger import customLogger
 from mobile.Appiumframework.Base.BasePage import BasePage
+from mobile.Appiumframework.Base import DriverClass
 
 
 @pytest.mark.usefixtures("beforeClass", "beforeMethod")
