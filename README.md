@@ -33,7 +33,10 @@ pip install Allure-pytest  to generate reports
 pip install webdriver-manager 
 pip install behave
 pip intall driver
+==========
 
+Download git
+https://git-scm.com/downloads
 ============== 
 clone Framework: GutHub
 git clone
