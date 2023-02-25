@@ -1,0 +1,16 @@
+userName: ulissesdasilva1
+accessKey: toFvsLctfxBm4cx6AJrC
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Firefox
+    browserVersion: 102.0
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Safari
+    browserVersion: 14.1
+browserstackLocal: true

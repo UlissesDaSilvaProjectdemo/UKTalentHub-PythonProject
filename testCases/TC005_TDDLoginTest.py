@@ -1,22 +1,25 @@
 import pytest
 from pageObjects.TC005_TDDLoginTestPage import LoginPage
 from utilities.readProperties import ReadConfig
-from utilities.customLogger import LogGen
 from utilities import XLUtils
 import time
 
-class Test_002_DDT_Login():
+import utilities.custom_logger as cl
+import logging
+
+class Test_TC002_DDT_Login():
     baseURL = ReadConfig.getApplicationURL()
     path = ".//TestData/LoginData.xlsx"
-    logger = LogGen.loggen()  # Logger
+    syslog = cl.customLogger(logging.DEBUG)
 
     @pytest.mark.regression
     def test_login_ddt(self, setup):
-        self.logger.info("******* Starting Test_002_DDT_Login Test **********")
-        self.logger.info("******* Starting Login DDT Test **********")
+        self.syslog.info("******* Starting Test_002_DDT_Login Test **********")
+        self.syslog.info("******* Starting Login Set up **********")
         self.driver = setup
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
+        self.syslog.error("******* Starting Login **********")
         self.lp = LoginPage(self.driver)
 
         self.rows = XLUtils.getRowCount(self.path, 'Sheet1')
@@ -34,38 +37,41 @@ class Test_002_DDT_Login():
             self.lp.login_btn()
 
 
+
+
+
             time.sleep(5)
-            act_title = self.driver.title
-            exp_title = "My account - My Store" #Login - My Store
+            act_title = self.driver.current_url
+            exp_title = "https://accounts.lambdatest.com/login" #Login - My Store
             if act_title == exp_title:
                 if self.exp == 'Pass':
-                    self.logger.info("**** passed ****")
-                    self.lp.clickLogout();
+                    self.syslog.info("**** passed ****")
+                    self.lp.click_password();
 
                     lst_status.append("Pass")
                 elif self.exp == 'Fail':
-                    self.logger.info("**** failed ****")
-                    self.lp.clickLogout();
+                    self.syslog.info("**** failed ****")
+                    self.lp.click_password();
 
                     lst_status.append("Fail")
 
             elif act_title != exp_title:
                 if self.exp == 'Pass':
-                    self.logger.info("**** failed ****")
+                    self.syslog.info("**** failed ****")
                     lst_status.append("Fail")
                 elif self.exp == 'Fail':
-                    self.logger.info("**** passed ****")
+                    self.syslog.info("**** passed ****")
                     lst_status.append("Pass")
             print(lst_status)
 
         if "Fail" not in lst_status:
-            self.logger.info("******* DDT Login test passed **********")
+            self.syslog.info("******* DDT Login test passed **********")
             self.driver.close()
             assert True
         else:
-            self.logger.error("******* DDT Login test failed **********")
+            self.syslog.error("******* DDT Login test failed **********")
             self.driver.close()
             assert False
 
-        self.logger.info("******* End of Login DDT Test **********")
-        self.logger.info("**************** Completed  TC_LoginDDT_002 ************* ");
+        self.syslog.info("******* End of Login DDT Test **********")
+        self.syslog.info("**************** Completed  TC_LoginDDT_002 ************* ");

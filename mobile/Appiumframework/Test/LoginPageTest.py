@@ -5,6 +5,7 @@ from mobile.Appiumframework.Base.BasePage import BasePage
 from mobile.Appiumframework.Test import LoginPageTest
 
 
+
 @pytest.mark.usefixtures("beforeClass", "beforeMethod")
 class LoginTest(unittest.TestCase):
 
@@ -35,3 +36,5 @@ class LoginTest(unittest.TestCase):
         self.gt.enterPassword2()
         self.gt.clickOnLoginB()
         self.gt.verifyAdminScreen()
+
+

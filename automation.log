@@ -1,1 +1,362 @@
 12/26/2021 04:35:45 PM - Test_001_Login - INFO: ****Started Login Test****
+02/12/2023 04:15:05 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:15:05 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:15:05 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:15:05 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:15:07 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:15:07 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:15:07 PM - Test001_Login - INFO: ****Started enterEmail Test****
+02/12/2023 04:15:07 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:15:07 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:15:07 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/12/2023 04:15:07 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/12/2023 04:15:07 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/12/2023 04:15:07 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/12/2023 04:15:07 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:15:07 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:15:07 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:15:07 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:15:07 PM - Test001_Login - ERROR: ****Login test failed ****
+02/12/2023 04:21:35 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:21:35 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:21:35 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:21:35 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:21:36 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:21:36 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:21:37 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/12/2023 04:21:37 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/12/2023 04:21:37 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/12/2023 04:21:37 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/12/2023 04:21:37 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:21:37 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:21:37 PM - Test001_Login - ERROR: ****Login test failed ****
+02/12/2023 04:25:35 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:25:35 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:25:35 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:25:35 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:26:08 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:26:08 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:26:08 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:26:08 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:26:25 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:26:25 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:26:25 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:26:25 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:26:29 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:26:29 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:26:29 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/12/2023 04:26:29 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/12/2023 04:26:29 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/12/2023 04:26:29 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/12/2023 04:26:29 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:26:29 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:26:29 PM - Test001_Login - ERROR: ****Login test failed ****
+02/12/2023 04:26:50 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:26:50 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:26:50 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:26:50 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:26:52 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:26:52 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:26:52 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/12/2023 04:26:52 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/12/2023 04:26:52 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/12/2023 04:26:52 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/12/2023 04:26:53 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:26:53 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:26:53 PM - Test001_Login - ERROR: ****Login test failed ****
+02/12/2023 04:27:48 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:27:48 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:27:48 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:27:48 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:27:50 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:27:50 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:27:50 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/12/2023 04:27:50 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/12/2023 04:27:50 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/12/2023 04:27:50 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/12/2023 04:27:50 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:27:50 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:27:50 PM - Test001_Login - ERROR: ****Login test failed ****
+02/12/2023 04:28:39 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:28:39 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:28:39 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:28:39 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:28:40 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:28:40 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:28:40 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/12/2023 04:28:40 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/12/2023 04:28:40 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/12/2023 04:28:40 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/12/2023 04:28:41 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:28:41 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:28:41 PM - Test001_Login - ERROR: ****Login test failed ****
+02/12/2023 04:35:21 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/12/2023 04:35:21 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/12/2023 04:35:21 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/12/2023 04:35:21 PM - Test001_Login - INFO: ****Started Login Test****
+02/12/2023 04:35:23 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/12/2023 04:35:23 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/12/2023 04:35:23 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/12/2023 04:35:23 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/12/2023 04:35:23 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/12/2023 04:35:23 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/12/2023 04:35:23 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/12/2023 04:35:23 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/12/2023 04:35:23 PM - Test001_Login - ERROR: ****Login test failed ****
+02/13/2023 01:43:31 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 01:43:31 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/13/2023 01:43:31 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/13/2023 01:43:31 PM - Test001_Login - INFO: ****Started Login Test****
+02/13/2023 01:43:36 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:43:36 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:43:36 PM - Test001_Login - INFO: ****Started enterEmail Test****
+02/13/2023 01:43:36 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:43:36 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:43:36 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/13/2023 01:43:36 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/13/2023 01:43:36 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/13/2023 01:43:36 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/13/2023 01:43:36 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:43:36 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:43:36 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:43:36 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:43:36 PM - Test001_Login - ERROR: ****Login test failed ****
+02/13/2023 01:46:33 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 01:46:33 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/13/2023 01:46:33 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/13/2023 01:46:33 PM - Test001_Login - INFO: ****Started Login Test****
+02/13/2023 01:46:36 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:46:36 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:46:36 PM - Test001_Login - INFO: ****Started enterEmail Test****
+02/13/2023 01:46:36 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:46:36 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:46:36 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/13/2023 01:46:36 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/13/2023 01:46:36 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/13/2023 01:46:36 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/13/2023 01:46:36 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:46:36 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:46:37 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:46:37 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:47:21 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 01:47:21 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/13/2023 01:47:21 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/13/2023 01:47:21 PM - Test001_Login - INFO: ****Started Login Test****
+02/13/2023 01:47:23 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:47:23 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:47:23 PM - Test001_Login - INFO: ****Started enterEmail Test****
+02/13/2023 01:47:23 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:47:23 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:47:23 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/13/2023 01:47:23 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/13/2023 01:47:23 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/13/2023 01:47:23 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/13/2023 01:47:23 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:47:23 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:47:23 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:47:23 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:49:48 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 01:49:48 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/13/2023 01:49:48 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/13/2023 01:49:48 PM - Test001_Login - INFO: ****Started Login Test****
+02/13/2023 01:49:51 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:49:51 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:49:51 PM - Test001_Login - INFO: ****Started enterEmail Test****
+02/13/2023 01:49:51 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/13/2023 01:49:51 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/13/2023 01:49:51 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/13/2023 01:49:51 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/13/2023 01:49:51 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/13/2023 01:49:51 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/13/2023 01:49:51 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:49:51 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:49:51 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/13/2023 01:49:51 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/13/2023 01:49:51 PM - Test001_Login - ERROR: ****Login test failed ****
+02/13/2023 03:27:50 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:31:29 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:32:04 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:32:38 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:34:48 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:35:42 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:38:50 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:45:17 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:45:17 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+02/13/2023 03:45:17 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/13/2023 03:45:17 PM - Test_001_Login - INFO: ****Started Login Test****
+02/13/2023 03:45:17 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:48:44 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:48:44 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+02/13/2023 03:48:44 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/13/2023 03:48:44 PM - Test_001_Login - INFO: ****Started Login Test****
+02/13/2023 03:48:44 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:49:18 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 03:49:18 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+02/13/2023 03:49:18 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/13/2023 03:49:18 PM - Test_001_Login - INFO: ****Started Login Test****
+02/13/2023 03:49:18 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/13/2023 04:02:40 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:02:40 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:05:08 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:05:08 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:06:03 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:06:03 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:06:27 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:06:27 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:07:28 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:07:28 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:52:30 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:52:30 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:53:12 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:53:12 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:54:28 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:54:28 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:55:25 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:55:25 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 04:57:30 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 04:57:30 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:00:02 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:00:02 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:00:44 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:00:44 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:01:22 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:01:22 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:01:34 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:02:21 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:02:21 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:02:32 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:05:04 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:05:04 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:10:41 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:10:41 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:17:44 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:17:44 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:20:37 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:20:37 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:23:25 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:23:25 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:24:52 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:24:52 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:25:06 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:25:43 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:25:43 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:25:55 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:26:08 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:26:08 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:26:20 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:26:37 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:26:37 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:26:48 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:31:54 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:31:54 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:32:10 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:32:44 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:32:44 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:32:58 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:33:14 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:33:14 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:33:46 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:33:46 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:34:00 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:38:10 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:38:10 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:38:23 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:40:22 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:40:22 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:40:36 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:42:18 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:42:18 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:42:31 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:46:02 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:46:02 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:46:13 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:48:28 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:48:28 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:48:42 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:49:20 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:49:20 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:49:36 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:49:54 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:49:54 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:50:07 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:52:11 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:52:11 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:52:23 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:53:29 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:53:29 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:53:40 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:55:22 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:55:22 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:55:33 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:55:58 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:55:58 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:56:11 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:57:13 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:57:13 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:57:25 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:58:11 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/13/2023 05:58:11 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/13/2023 05:58:25 PM - Test_002_DDT_Login - INFO: **** passed ****
+02/13/2023 05:58:37 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:58:48 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:58:59 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/13/2023 05:59:01 PM - Test_002_DDT_Login - ERROR: ******* DDT Login test failed **********
+02/14/2023 02:54:03 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/14/2023 02:54:03 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+02/14/2023 02:54:03 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/14/2023 02:54:03 PM - Test_001_Login - INFO: ****Started Login Test****
+02/14/2023 02:54:03 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/14/2023 02:54:53 PM - Test_001_Login - INFO:  ====== WebDriver manager ======
+02/14/2023 02:54:53 PM - Test_001_Login - INFO: Current google-chrome version is 94.0.4606
+02/14/2023 02:54:53 PM - Test_001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/14/2023 02:54:53 PM - Test_001_Login - INFO: ****Started Login Test****
+02/14/2023 02:55:03 PM - Test_001_Login - INFO: ****Login test passed ****
+02/14/2023 02:57:09 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/14/2023 02:57:09 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/14/2023 02:59:14 PM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/14/2023 02:59:14 PM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/14/2023 02:59:27 PM - Test_002_DDT_Login - INFO: **** passed ****
+02/14/2023 02:59:38 PM - Test_002_DDT_Login - INFO: **** failed ****
+02/15/2023 08:05:17 AM - Test_002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+02/15/2023 08:05:17 AM - Test_002_DDT_Login - INFO: ******* Starting Login DDT Test **********
+02/15/2023 08:05:29 AM - Test_002_DDT_Login - INFO: **** passed ****
+02/15/2023 08:05:41 AM - Test_002_DDT_Login - INFO: **** failed ****
+02/15/2023 08:05:54 AM - Test_002_DDT_Login - INFO: **** failed ****
+02/15/2023 08:06:06 AM - Test_002_DDT_Login - INFO: **** failed ****
+02/15/2023 08:06:07 AM - Test_002_DDT_Login - ERROR: ******* DDT Login test failed **********
+02/15/2023 01:12:14 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/15/2023 01:12:14 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/15/2023 01:12:14 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/15/2023 01:12:14 PM - Test001_Login - INFO: ****Started Login Test****
+02/15/2023 01:12:15 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/15/2023 01:12:15 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/15/2023 01:12:15 PM - Test001_Login - INFO: ****Started enterEmail Test****
+02/15/2023 01:12:15 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/15/2023 01:12:15 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/15/2023 01:12:15 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/15/2023 01:12:15 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/15/2023 01:12:15 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/15/2023 01:12:15 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/15/2023 01:12:15 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/15/2023 01:12:15 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/15/2023 01:12:15 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/15/2023 01:12:15 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/15/2023 01:12:15 PM - Test001_Login - ERROR: ****Login test failed ****
+02/15/2023 01:13:01 PM - Test001_Login - INFO:  ====== WebDriver manager ======
+02/15/2023 01:13:01 PM - Test001_Login - INFO: Current google-chrome version is 94.0.4606
+02/15/2023 01:13:01 PM - Test001_Login - INFO: Get LATEST driver version for 94.0.4606
+02/15/2023 01:13:01 PM - Test001_Login - INFO: ****Started Login Test****
+02/15/2023 01:13:02 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/15/2023 01:13:02 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/15/2023 01:13:02 PM - Test001_Login - INFO: ****Started enterEmail Test****
+02/15/2023 01:13:02 PM - LoginPage - INFO: Element not found with locator: login and  locatorType: link
+02/15/2023 01:13:02 PM - LoginPage - INFO: Cannot click on the element with locator: login locatorType: link
+02/15/2023 01:13:02 PM - LoginPage - INFO: Element not found with locator: user_email and  locatorType: id
+02/15/2023 01:13:02 PM - LoginPage - INFO: Cannot send data on the element with locator: user_email locatorType: id
+02/15/2023 01:13:02 PM - LoginPage - INFO: Element not found with locator: user_password and  locatorType: id
+02/15/2023 01:13:02 PM - LoginPage - INFO: Cannot send data on the element with locator: user_password locatorType: id
+02/15/2023 01:13:02 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/15/2023 01:13:02 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/15/2023 01:13:02 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
+02/15/2023 01:13:02 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
+02/15/2023 01:13:02 PM - Test001_Login - ERROR: ****Login test failed ****

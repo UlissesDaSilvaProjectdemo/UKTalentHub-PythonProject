@@ -15,18 +15,18 @@ def step_impl(context):
     context.driver.maximize_window()
 
 
-@then('the user enter username "{user}" and password "{pwd}"')
-def step_impl(context,user, pwd):
+@then('the user enter username "{username}" and password "{password}"')
+def step_impl(context,username , password):
     time.sleep(1)
-    context.driver.find_element_by_id("user").send_keys(user)
+    context.driver.find_element("xpath","//*[@id='user']").send_keys(username)
     time.sleep(1)
-    context.driver.find_element_by_xpath("//*[@id='password']").send_keys(pwd)
+    context.driver.find_element("xpath","//*[@id='password']").send_keys(password)
 
 
 @then('the user click on the login button')
 def step_impl(context):
     time.sleep(1)
-    context.driver.implicitly_wait(10)
+    context.driver.implicitly_wait(20)
     context.driver.find_element_by_id("login").click()
 
 

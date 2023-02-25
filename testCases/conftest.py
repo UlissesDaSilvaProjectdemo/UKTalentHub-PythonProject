@@ -10,7 +10,8 @@ from webdriver_manager.opera import OperaDriverManager
 @pytest.fixture()
 def setup(browser):
     if browser == 'chrome':
-        #driver = webdriver.Chrome(executable_path=r"C:\Users\Ulisses.Dasilva\UKTalentHub-PythonProject\Drivers\chromedriver.exe")
+        driver = webdriver.Chrome(executable_path=r"C:\Users\Ulisses.Dasilva\UKTalentHub-PythonProject\Drivers\chromedriver.exe")
+
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.maximize_window()
         print("Launching chrome browser.........")
@@ -31,6 +32,7 @@ def setup(browser):
     elif browser == 'Opera':
         driver = webdriver.Opera(executable_path=OperaDriverManager().install())
         print("Launching Opera browser.........")
+
     return driver
 
 

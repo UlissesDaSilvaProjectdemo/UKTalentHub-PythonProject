@@ -7,11 +7,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 desired_caps = {}
 desired_caps['platformName'] = 'Android'
-desired_caps['platformVersion'] = '10'
-desired_caps['deviceName'] = 'Pixel'
+desired_caps['platformVersion'] = '11'
+desired_caps['deviceName'] = 'Pixel_6'
 desired_caps['app'] = ('/Users/sujithreddy/Documents/Code2Lead/kwad.apk')
-desired_caps['appPackage'] = 'com.code2lead.kwad'
-desired_caps['appActivity'] = 'com.code2lead.kwad.MainActivity'
+desired_caps['appPackage'] = 'com.android.launcher3'
+desired_caps['appActivity'] = 'com.android.launcher3.uioverrides.QuickstepLauncher'
 
 driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
 

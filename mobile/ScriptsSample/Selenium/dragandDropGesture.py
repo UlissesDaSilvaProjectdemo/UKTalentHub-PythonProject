@@ -10,7 +10,7 @@ desired_caps['platformName'] = 'Android'
 desired_caps['platformVersion'] = '11'
 desired_caps['automationName'] = 'UiAutomator2'
 desired_caps['deviceName'] = 'Pixel'
-desired_caps['app'] = ('/Users/sujithreddy/Documents/Code2Lead/others/kwad.apk')
+desired_caps['app'] = ('C:\Users\Ulisses.Dasilva\Downloads\Appium\demoApk.apk')
 desired_caps['appPackage'] = 'com.code2lead.kwad'
 desired_caps['appActivity'] = 'com.code2lead.kwad.MainActivity'
 

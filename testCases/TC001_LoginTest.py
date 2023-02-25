@@ -1,18 +1,15 @@
-import pytest
-from pageObjects.TC001_LoginPage import LoginPage
-from utilities.customLogger import LogGen
-from utilities.readProperties import ReadConfig
-import utilities.custom_logger as cl
 import logging
+import pytest
+import utilities.custom_logger as cl
+from pageObjects.TC001_login_page import LoginPage
+from utilities.readProperties import ReadConfig
 
-class Test_001_Login:
+
+class Test_TC001_Login( ):
     baseURL = ReadConfig.getApplicationURL()
-    username = ReadConfig.getUseremail()
-    password = ReadConfig.getPassword()
-
-
-    #logger = LogGen.loggen()
-    syslog = cl.custom_Logger(logging.DEBUG)
+    getUseremail = ReadConfig.getUseremail()
+    getPassword = ReadConfig.getPassword()
+    syslog = cl.customLogger(logging.DEBUG)
 
     @pytest.mark.sanity
     @pytest.mark.regression
@@ -25,27 +22,25 @@ class Test_001_Login:
         self.driver = setup
         self.driver.get(self.baseURL)
         self.lp = LoginPage(self.driver)
-        self.lp.signin_button()
+        self.lp.clickLoginLink()
+        self.syslog.info("****Started enterEmail Test****")
+        self.lp.login('uktalenthub@gmail','hub123')
 
-        self.lp.setPassword(self.password)
-        self.lp.setUserName(self.username)
-        self.syslog.info("****Finished Login Test****")
-        self.lp.login_btn()
-
-
+        #self.lp.enterEmail(self.getUseremail)
+        #self.lp.enterPassword(self.getPassword)
+        self.lp.clickLoginButton()
 
 
 
         act_title = self.driver.title
-        if act_title == "xxxxLogin - My Store":#Login - My Store
+        if act_title == "Let's Kode It":#Let's Kode It
             self.syslog.info("****Login test passed ****")
             self.driver.close()
             assert True
         else:
             self.syslog.error("****Login test failed ****")
             self.driver.save_screenshot(".\\Screenshots\\" + "test_homePageTitle.png")
-            #self.driver.close()
-
+            self.driver.close()
             assert False
 
 

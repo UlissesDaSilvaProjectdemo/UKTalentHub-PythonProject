@@ -1,11 +1,12 @@
 import requests
-from utilities.customLogger import LogGen
-logger = LogGen.loggen()
+from selenium.webdriver.common.by import By
+
 
 # A server generates HTTP Status codes in response to the request submitted
 # by the client to the server.
 # 200 – Valid Link/success
 # 301/302 - Page redirection temporary/permanent
+# 403 Forbidden
 # 404 – Page not found
 # 400 – Bad request
 # 401 – Unauthorized
@@ -23,7 +24,7 @@ class  SmokeTest:
 
     def broken_link(self):
         self.driver.get('https://www.bbc.co.uk/')
-        links = self.driver.find_elements_by_css_selector(self.find_elements_by_css_selector)
+        links = self.driver.find_elements(By.CSS_SELECTOR,"a")
         for link in links:
             r = requests.head(link.get_attribute('href'))
             print(link.get_attribute('href'), r.status_code)

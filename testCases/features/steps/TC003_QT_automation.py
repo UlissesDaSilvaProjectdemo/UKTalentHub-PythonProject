@@ -16,7 +16,7 @@ location = ReadConfig.getLocation()
 radio_option = ReadConfig.get_radio_option()
 email = ReadConfig.get_email()
 thankyou_msg = ReadConfig.get_thankyou_msg()
-
+#getByType=ReadConfig.getByType()
 
 
 @given('the user loads Qualitest official site')
@@ -60,7 +60,7 @@ def navigate(context):
 
 @when('the user clicks on Contact us button')
 def step_impl(context):
-    context.driver.find_element_by_xpath(btn_contactus).click()
+    context.find_element("xpath", "a[@class='btn btn-sm btn-link text-primary']").click()
 
 
 @then('the user is able to access the Qualitest Contact us web page')
@@ -87,10 +87,11 @@ def navigate(context):
     context.driver.implicitly_wait(10)
     context.driver.get('https://qualitestgroup.com')
     context.driver.maximize_window()
-    context.driver.find_element_by_xpath(btn_contactus).click()
+    context.driver.find_element('xpath',"a[@class='btn btn-sm btn-link text-primary']").click()
     page_url = context.driver.current_url
     print(page_url)
     context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
+    context.driver.find_element("tag_name","body").send_keys(Keys.PAGE_DOWN)
 
 
 @when('the user enters first name')

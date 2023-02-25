@@ -2,6 +2,7 @@ import configparser
 config = configparser.RawConfigParser()
 config.read(".\\Configurations\\config.ini")
 
+
 class ReadConfig:
 
     @staticmethod
@@ -11,13 +12,13 @@ class ReadConfig:
 
     @staticmethod
     def getUseremail():
-        username = config.get('common info', 'useremail')
-        return username
+        getUseremail = config.get('common info', 'getUseremail')
+        return getUseremail
 
     @staticmethod
     def getPassword():
-        password = config.get('common info', 'password')
-        return password
+        getPassword = config.get('common info', 'getPassword')
+        return getPassword
 
     @staticmethod
     def trello_password():
@@ -209,3 +210,5 @@ class ReadConfig:
     def get_thankyou_msg():
         get_thankyou_msg = config.get('common info', 'thankyou_msg')
         return get_thankyou_msg
+
+

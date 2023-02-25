@@ -1,8 +1,6 @@
 import pytest
 import time
 from mobile.Appiumframework.Base.DriverClass import Driver
-import mobile.AppiumFrameWork.utilities.CustomLogger as cl
-
 
 @pytest.yield_fixture(scope='class')
 def beforeClass(request):

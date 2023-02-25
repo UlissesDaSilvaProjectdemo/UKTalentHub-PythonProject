@@ -1,14 +1,14 @@
 import allure
 from allure_commons.types import AttachmentType
+from appium.webdriver.common.appiumby import AppiumBy
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
-import mobile.AppiumFrameWork.utilities.CustomLogger as cl
+import mobile.Appiumframework.Utilities.customlogger as cl
 import time
 
 
 class BasePage:
     log = cl.customLogger()
-
     def __init__(self, driver):
         self.driver = driver
 
@@ -19,10 +19,10 @@ class BasePage:
                              ignored_exceptions=[ElementNotVisibleException, ElementNotSelectableException,
                                                  NoSuchElementException])
         if locatorType == "id":
-            element = wait.until(lambda x: x.find_element_by_id(locatorvalue))
+            element = wait.until(lambda x: x.find_element(AppiumBy.id,locatorvalue))
             return element
         elif locatorType == "class":
-            element = wait.until(lambda x: x.find_element_by_class_name(locatorvalue))
+            element = wait.until(lambda x: x.find_element(AppiumBy.CLASS_NAME,locatorvalue))
             return element
         elif locatorType == "des":
             element = wait.until(
@@ -79,6 +79,7 @@ class BasePage:
             self.log.info(
                 "Unable to send text on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
 
+
     def isDisplayed(self, locatorValue, locatorType="id"):
         element = None
         try:
@@ -95,7 +96,7 @@ class BasePage:
 
     def screenShot(self, screenshotName):
         fileName = screenshotName + "_" + (time.strftime("%d_%m_%y_%H_%M_%S")) + ".png"
-        screenshotDirectory = "../screenshots/"
+        screenshotDirectory = "../Screenshots/"
         screenshotPath = screenshotDirectory + fileName
         try:
             self.driver.save_screenshot(screenshotPath)

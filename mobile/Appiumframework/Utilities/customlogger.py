@@ -1,8 +1,6 @@
 import inspect
 import logging
 import allure
-import mobile.Appiumframework.Utilities.confitest as cl
-
 
 def customLogger():
     # 1.) This is used to get the  class / method name from where this customLogger method is called
@@ -15,7 +13,7 @@ def customLogger():
     logger.setLevel(logging.DEBUG)
 
     # 4.) Create the fileHandler to save the logs in the file
-    fileHandler = logging.FileHandler("../reports/Code2Lead.log", mode='a')
+    fileHandler = logging.FileHandler("../MobileReports/MobileLogs/mobile.log", mode='a')
 
     # 5.) Set the logLevel for fileHandler
     fileHandler.setLevel(logging.DEBUG)
@@ -33,7 +31,6 @@ def customLogger():
     #  9.) Finally return the logging object
 
     return logger
-
 
 def allureLogs(text):
     with allure.step(text):

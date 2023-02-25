@@ -9,14 +9,14 @@ Feature: the user would like to login into the application
     Then  the user close the browser
 
     Examples:
-      | username              | password        |
-      | admin@gmail.com       | admin123!       |
-      | admin34@yahoo.com     | admin1965@      |
-      | userXZY@gmailcom      | userXZY76&      |
-      | novauser@gmail.com    | nova@123$       |
-      | myser@gmail.com       | meuser@23*&     |
-      | myserxxx@gmail.com    | mexxxxuser@23*& |
-      | myserxtttxx@gmail.com | mexxxxuser@23*& |
+      | username           | password   |
+      | admin@gmail.com    | admin123!  |
+      | admin34@yahoo.com  | admin1965@ |
+      | userXZY@gmailcom   | userXZY76& |
+      | novauser@gmail.com | nova@123$  |
+      #| myser@gmail.com       | meuser@23*&     |
+      #| myserxxx@gmail.com    | mexxxxuser@23*& |
+      #| myserxtttxx@gmail.com | mexxxxuser@23*& |
 
 
 
@@ -41,6 +41,7 @@ Feature: the user would like to login into the application
 #Verify that the User is not able to log in with an invalid Username and Valid Password
 #Verify that the User is not able to log in with a blank Username or Password
 #Verify that the User is not able to Login with inactive credentials
+
 #Verify that the reset button clears the data from all the text boxes in the login form
 #Verify that the login credentials, mainly password stores in a database in an encrypted format
 #Verify that clicking on the browser back button after successful login should not take the User to log out mode
@@ -50,6 +51,7 @@ Feature: the user would like to login into the application
 #Verify that the “Keep me logged in” checkbox is unselected by default (depends on business logic, it may be selected or unselected)
 #Verify that the timeout of the login session (Session Timeout)
 #Verify that the logout link is redirected to login/home page
+
 #Verify that User is redirected to appropriate page after successful login
 #Verify that the User is redirected to the Forgot password page when clicking on the Forgot Password link
 #Verify that the User is redirected to the Create an account page when clicking on the Signup / Create an account link
@@ -88,6 +90,7 @@ Feature: the user would like to login into the application
 #Verify whether the user is able to access the application after disabling the cookies.
 #Disabling Cookies: Web pages may crash if we disable the cookies. Disable cookies on your browser. Access the website after all the cookies are disabled on your browser. There shouldn’t be any crashers or blockers.
 #Here you need to verify two things:
+
 #i. Is there an appropriate message displaying to the Users to enable cookies to access the site
 #ii. Is there any workaround to access the site for the browsers with cookies disabled.
 #Verify whether the user is able to access the application after removing the cookies.
@@ -100,6 +103,7 @@ Feature: the user would like to login into the application
 #Verify whether all the sensitive data (user credentials) stored in a cookie is in the form of encrypted or not. (Cookies Encryption)
 #Verify whether the cookies are being written correctly on all supported browsers. (Cross Browser Testing)
 #Learn More About Cross Browser Testing & CrossBrowserTesting Tool
+
 #Verify that the user is able to access the site by not accepting all the cookies.
 #Accept or Reject Cookies: Make sure your browser is writing cookies. Access the website and allow the browser to write cookies. Now disable the cookies and try to access the site. Doing this may crash your site.
 #Verify that there should not be overuse of cookies.

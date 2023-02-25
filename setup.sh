@@ -33,6 +33,33 @@ behave testCases/selenium/TC007_switch_to_frame.feature
 behave testCases/selenium/TC008_switch_to_window.feature
 behave testCases/selenium/TC008_switch_to_window.feature
 behave testCases/selenium/TC010_scrolling_element.feature
+
+#----------------------Presentation----------------------------//
+
+rem behave testCases/features/TC001_loginNegativePath.feature
+rem pytest -s -v  --html=.Reports/report.html testCases/TC005_TDDLoginTest.py --browser chrome
+rem behave testCases/selenium/TC003_RadioButtonsAndCheckboxes.feature
+rem pytest -s -v  --html=.Reports/report.html testCases/TC002_LinksSmokeTest.py --browser chrome
+
+# //---------------- Rest Api presentation---------------------//
+rem pytest -s -v  --html=.Reports/report.html testCases/TC006_TrelloRestAPI.py --browser chrome
+rem pytest -s -v  --html=.Reports/report.html testCases/TestAPI001_Get_ListUser.py --browser chrome
+rem pytest -s -v  --html=.Reports/report.html testCases/TestAPI002_POST_Create_User.py --browser chro
+me
+rem pytest -s -v  --html=.Reports/report.html testCases/TestAPI009_POST_GetAuthToken.py --browser chr
+
+
+#---------mobile-----------------//
+rem C:\Users\Ulisses.Dasilva\UKTalentHub-PythonProject\mobile\Appiumframework\Test>
+rem py.test -v -s TC000_clickSearchBarTest.py
+
+
+
+
+
+
+
+
  
 
 
