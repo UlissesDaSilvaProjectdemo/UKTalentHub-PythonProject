@@ -32,17 +32,18 @@ def step_impl(context):
     context.driver.implicitly_wait(100)
     page_url = context.driver.current_url
     print(page_url)
-    if page_url == "https://qualitestgroup.com/":
+    if page_url == "https://www.qualitestgroup.com/":
         assert True
     else:
         assert False
 
 
-@then('the title of the page is The World’s Leading AI-Led Quality Engineering Company | Qualitest')
-def step_impl(context):
+@then('the title of the page is {title}')
+def step_impl(context, title):
     context.driver.implicitly_wait(100)
     page_title = context.driver.title
-    if page_title == "The World’s Leading AI-Led Quality Engineering Company | Qualitest":
+    print(page_title)
+    if page_title == title:
         assert True
     else:
         assert False

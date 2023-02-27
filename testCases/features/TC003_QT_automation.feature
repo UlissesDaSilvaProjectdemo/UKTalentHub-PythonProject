@@ -3,7 +3,7 @@ Feature: User launches Qualitest site and explores
   Scenario: The user launches Qualitest site
       Given the user loads Qualitest official site
       Then  the user is able to access the Qualitest site
-      And   the title of the page is The World’s Leading AI-Led Quality Engineering Company | Qualitest
+      And   the title of the page is The World’s Leading AI-Led Quality Engineering Company - Qualitest
 
   Scenario: The user opens contact us page
       Given the user is on Qualitest site
@@ -23,4 +23,3 @@ Feature: User launches Qualitest site and explores
       And   the user fills how can we help section
       And   the user clicks on Submit button
       Then  the user receives a Thank you message
-
