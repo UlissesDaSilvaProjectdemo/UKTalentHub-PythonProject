@@ -61,12 +61,13 @@ def navigate(context):
 
 @when('the user clicks on Contact us button')
 def step_impl(context):
-    context.find_element("xpath", "a[@class='btn btn-sm btn-link text-primary']").click()
+    context.driver.find_element("link text", "Contact us").click()
 
 
 @then('the user is able to access the Qualitest Contact us web page')
 def step_impl(context):
     page_url = context.driver.current_url
+    print(page_url)
     if page_url == "https://qualitestgroup.com/contact-us/":
         assert True
     else:
@@ -75,12 +76,9 @@ def step_impl(context):
 
 @then('the page contains a form for the user')
 def step_impl(context):
-    page_title = context.driver.title
-    if page_title == "Contact Us – Independent Software Testing Company | Quality Assurance Services | Qualitest":
-        assert True
-    else:
-        assert False
-
+    firstname_textbox = context.driver.find_element("id", "firstname-34dd68e0-b077-4e95-9243-b861f3f2fd7d")
+    lastname_textbox = context.driver.find_element("id", "lastname-34dd68e0-b077-4e95-9243-b861f3f2fd7d")
+    assert(firstname_textbox and lastname_textbox)
 
 @given('the user is on contact us page')
 def navigate(context):
