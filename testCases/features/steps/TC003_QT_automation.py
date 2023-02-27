@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 from utilities.readProperties import ReadConfig
 from selenium.webdriver.support.select import Select
+from time import sleep
 
 btn_contactus = ReadConfig.clickOnContactUs()
 btn_submit = ReadConfig.GetSubmitButton()
@@ -68,90 +69,71 @@ def step_impl(context):
 
 @then('the page contains a form for the user')
 def step_impl(context):
-    firstname_textbox = context.driver.find_element("id", "firstname-34dd68e0-b077-4e95-9243-b861f3f2fd7d")
-    lastname_textbox = context.driver.find_element("id", "lastname-34dd68e0-b077-4e95-9243-b861f3f2fd7d")
+    firstname_textbox = context.driver.find_element('xpath', firstname)
+    lastname_textbox = context.driver.find_element('xpath', lastname)
     assert(firstname_textbox and lastname_textbox)
 
 @given('the user is on contact us page')
 def navigate(context):
-    context.driver = webdriver.Chrome(ChromeDriverManager().install())
-    context.driver.implicitly_wait(10)
-    context.driver.get('https://qualitestgroup.com')
-    context.driver.maximize_window()
-    context.driver.find_element('xpath',"a[@class='btn btn-sm btn-link text-primary']").click()
-    page_url = context.driver.current_url
-    print(page_url)
-    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-    context.driver.find_element("tag_name","body").send_keys(Keys.PAGE_DOWN)
+    options = webdriver.ChromeOptions()
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--ignore-ssl-errors')
+    context.driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    context.driver.implicitly_wait(100)
+    context.driver.get('https://qualitestgroup.com/contact-us')
+    sleep(5)
 
 
 @when('the user enters first name')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    context.driver.find_element_by_xpath(firstname).send_keys("tets")
+    context.driver.find_element('xpath', firstname).send_keys("test")
 
 
 @when('the user enters last name')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    context.driver.find_element_by_xpath(lastname).send_keys("user")
+    context.driver.find_element('xpath', lastname).send_keys("user")
 
 
 @when('the user enters company name')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    context.driver.find_element_by_xpath(company).send_keys("Qualitest")
+    context.driver.find_element('xpath', company).send_keys("Qualitest")
 
 
 @when('the user enters phone number')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    context.driver.find_element_by_xpath(phone).send_keys("1234567890")
+    context.driver.find_element('xpath', phone).send_keys("1234567890")
 
 
 @when('the user enters email')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    print(context.driver.find_element_by_xpath(email))
-    context.driver.find_element_by_xpath(email).send_keys("abcd@efgh.com")
+    context.driver.find_element('xpath', email).send_keys("abcd@efgh.com")
 
 
 @when('the user selects what he wants to talk about')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    context.driver.find_element_by_xpath(radio_option).click()
+    context.driver.find_element('xpath', radio_option).click()
 
 
 @when('the user enters location')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    element = context.driver.find_element_by_xpath(location)
-    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-    print("Selecting UK & Europe")
-    sel = Select(context.driver.find_element_by_xpath(location))
+    sel = Select(context.driver.find_element('xpath', location))
     sel.select_by_value("UK & Europe")
     print("Select UK & Europe")
 
 
 @when('the user fills how can we help section')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    context.driver.find_element_by_xpath(text_query).send_keys("testing this form")
+    context.driver.find_element('xpath', text_query).send_keys("testing this form")
 
 
 @when('the user clicks on Submit button')
 def step_impl(context):
-    context.driver.find_element_by_xpath(btn_submit).click()
+    context.driver.find_element('xpath', btn_submit).click()
 
 
 @then('the user receives a Thank you message')
 def step_impl(context):
-    context.driver.implicitly_wait(100)
-    msg = context.driver.find_element_by_xpath(thankyou_msg).text
-    print(msg)
+    msg = context.driver.find_element('xpath', thankyou_msg).text
     assert(msg == "Thanks for contacting us.")
 
 
