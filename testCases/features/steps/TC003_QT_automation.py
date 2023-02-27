@@ -32,10 +32,7 @@ def step_impl(context):
     context.driver.implicitly_wait(100)
     page_url = context.driver.current_url
     print(page_url)
-    if page_url == "https://www.qualitestgroup.com/":
-        assert True
-    else:
-        assert False
+    assert(page_url == "https://www.qualitestgroup.com/")
 
 
 @then('the title of the page is {title}')
@@ -43,10 +40,7 @@ def step_impl(context, title):
     context.driver.implicitly_wait(100)
     page_title = context.driver.title
     print(page_title)
-    if page_title == title:
-        assert True
-    else:
-        assert False
+    assert(page_title == title)
 
 
 @given('the user is on Qualitest site')
@@ -68,10 +62,8 @@ def step_impl(context):
 def step_impl(context):
     page_url = context.driver.current_url
     print(page_url)
-    if page_url == "https://qualitestgroup.com/contact-us/":
-        assert True
-    else:
-        assert False
+    assert(page_url == "https://qualitestgroup.com/contact-us/")
+
 
 
 @then('the page contains a form for the user')
@@ -160,9 +152,7 @@ def step_impl(context):
     context.driver.implicitly_wait(100)
     msg = context.driver.find_element_by_xpath(thankyou_msg).text
     print(msg)
-    if msg == "Thanks for contacting us.":
-        assert True
-    else:
-        assert False
+    assert(msg == "Thanks for contacting us.")
+
 
 
