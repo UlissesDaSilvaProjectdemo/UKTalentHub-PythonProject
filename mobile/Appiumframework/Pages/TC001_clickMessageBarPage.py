@@ -16,8 +16,6 @@ class clickMessageBar(BasePage):
         cl.allureLogs("click on the searchbar")
 
 
-    def enter_DataSearchBar(self):
-        self.sendText( "UK_TALENT_HUB",self._enterDataSearchBar, "id")
 
 
 

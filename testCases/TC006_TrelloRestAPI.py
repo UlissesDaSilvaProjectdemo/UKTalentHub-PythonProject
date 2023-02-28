@@ -12,12 +12,12 @@ class TrelloApiTest(unittest.TestCase):
     def setUp(self):
         self.board_id = self.create_board()
         list_id = self.create_list(self.board_id, name=" ChecKlist")
-        first_card_id = self.create_card(list_id, name="first_card_HUBTEST")
-        second_card_id = self.create_card(list_id, name="second_card_HUBTEST")
-        third_card_id = self.create_card(list_id, name="third_card_HUBTEST")
-        fifth_card_id = self.create_card(list_id, name='  fifith card HUB TEST ')
-        sixth_card = self.create_card(list_id, name="TEST comment")
-        seventh_card = self.create_card(list_id, name=" sevenr TEST comment")
+        first_card_id = self.create_card(list_id, name="TEST_first_card_HUBTEST")
+        second_card_id = self.create_card(list_id, name="TEST_second_card_HUBTEST")
+        third_card_id = self.create_card(list_id, name="TEST_third_card_HUBTEST")
+        fifth_card_id = self.create_card(list_id, name=' TEST_fifith card HUB TEST ')
+        sixth_card = self.create_card(list_id, name="TEST_comment")
+        seventh_card = self.create_card(list_id, name="TEST_seven TEST comment")
 
 
         self.edit_card(second_card_id, name="Edit second card", desc=' add a new description')

@@ -8,14 +8,12 @@ class clickSearchBar(BasePage):
         self.driver = driver
 
     # Locators values in Contact us form
-    _clickSearchtFormBar = "android.widget.TextView"  # ClassName
-    _enterDataSearchBar = "com.android.quicksearchbox:id/search_src_text"
+    _clickSearchtFormBar = "com.android.quicksearchbox:id/search_widget_text"  # ClassName
+
 
     def clickSearchtFormBar(self):
-        self.clickElement(self._clickSearchtFormBar, "class")
+        self.clickElement(self._clickSearchtFormBar, "id")
 
-    def clickEnter_DataSearchBar(self):
-        self.sendText( "UK_TALENT_HUB",self._enterDataSearchBar, "id")
 
 
 

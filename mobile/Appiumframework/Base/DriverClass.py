@@ -1,5 +1,5 @@
 from appium import  webdriver
-from mobile.Appiumframework.Base.lunchApp import desired_caps
+from mobile.Appiumframework.Base.OpenApp import desired_caps
 
 class Driver:
 

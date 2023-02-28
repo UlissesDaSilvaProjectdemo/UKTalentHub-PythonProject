@@ -15,6 +15,4 @@ class ContactFormTest(BasePage):
 
     @pytest.mark.run(order=1)
     def test_opencontactForm(self):
-
-
             self.cf.clickSearchtFormBar()
