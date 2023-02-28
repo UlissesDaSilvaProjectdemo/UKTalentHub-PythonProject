@@ -27,25 +27,45 @@ click_cant_login_id = ReadConfig.click_cant_login_id()
 click_return_login_xpath = ReadConfig.click_return_login_xpath()
 link_logout_link_text = ReadConfig.link_logout_linktext()
 account_sign_up = ReadConfig.account_sign_up()
+continue_button = ReadConfig.get_login_continue_button_id()
+password_textbox_id = ReadConfig.get_trello_textbox_password_id()
 
 
 
 @given('the user navigate to the login page')
 def navigate(context):
-    context.driver =  webdriver.Chrome(ChromeDriverManager().install())
-    context.driver.get('https://trello.com')
+    context.driver = webdriver.Chrome(ChromeDriverManager().install())
+    context.driver.get('https://trello.com/login')
     context.driver.maximize_window()
-    context.driver.find_element_by_xpath("//*[@class='btn btn-sm btn-link text-primary']").click()
-
-
-
-
-@when('the user set username "{user}" and "{pwd}" password')
-def username(context,user,pwd):
     context.driver.implicitly_wait(1000)
-    context.driver.find_element_by_id(textbox_username_id).send_keys(user)
-    context.driver.find_element_by_xpath("//*[@id='password']").send_keys(pwd)
-    context.driver.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
+
+
+
+import time
+@when('the user enters valid credentials')
+def username(context):
+    # get credentials from secret file
+    credentials = []
+    with open("secrets/TrelloSecret.txt", 'r') as file_stream:
+        credentials = file_stream.readlines()
+    context.driver.find_element('id', textbox_username_id).send_keys(credentials[0]) # input email
+    context.driver.find_element('id', continue_button).click() # submit email to show password textbox
+    time.sleep(1)
+    context.driver.find_element('id', password_textbox_id).send_keys(credentials[1]) # input password
+
+
+login_submit_button = ReadConfig.get_trello_login_submit_button()
+
+
+@when('the user clicks login')
+def login(context):
+    context.driver.find_element('id', login_submit_button).click()  # submit email to show password textbox
+
+@then('the user is logged in')
+def logged_in(context):
+    time.sleep(2)
+    url = context.driver.current_url
+    assert(url.endswith("/boards"))  # on the dashboard
 
 
 @then('the user click on atlassian signup')

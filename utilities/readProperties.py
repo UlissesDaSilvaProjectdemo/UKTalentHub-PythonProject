@@ -211,4 +211,20 @@ class ReadConfig:
         get_thankyou_msg = config.get('common info', 'thankyou_msg')
         return get_thankyou_msg
 
+    @staticmethod
+    def get_login_continue_button_id():
+        get = config.get('common info', 'login_continue_button_id')
+        return get
+
+    @staticmethod
+    def get_trello_textbox_password_id():
+        get = config.get('common info', 'trello_textbox_password_id')
+        return get
+
+    @staticmethod
+    def get_trello_login_submit_button():
+        get = config.get('common info', 'trello_login_submit_button')
+        return get
+
+
 

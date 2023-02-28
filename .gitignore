@@ -4,3 +4,4 @@ Reports/*.json
 venv/
 .log
 .html
+secrets/*
