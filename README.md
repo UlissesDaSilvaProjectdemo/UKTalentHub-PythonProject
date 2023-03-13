@@ -100,7 +100,7 @@ eg:
 To run Allure report
 rem C:\User\UKTalentHub-PythonProject\.Reports\AllureReports
 
-rem behave -f allure_behave.formatter:AllureFormatter -o 'Reports\AllureReports' testCases/features/TC003_QT_automation.feature
+rem behave -f allure_behave.formatter:AllureFormatter -o 'Reports\AllureReports' testCases/features/TestFile.feature
 
 
 
