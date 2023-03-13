@@ -95,6 +95,14 @@ go to pycharm IDE Terminal -->allure serve . Reports/AllureReports
 ----------------
 5 - to create the file --> run example: Pycharm IDE - cucumber Allure-repports <-f allure_behave.formatter:AllureFormatter -o>
 behave -f allure_behave.formatter:AllureFormatter -o .Reports/file_name/selenium/features
+eg:
+
+To run Allure report
+rem C:\User\UKTalentHub-PythonProject\.Reports\AllureReports
+
+rem behave -f allure_behave.formatter:AllureFormatter -o 'Reports\AllureReports' testCases/features/TC003_QT_automation.feature
+
+
 
 ----------------
 HTML report 
