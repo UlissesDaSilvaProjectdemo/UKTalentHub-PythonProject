@@ -1,6 +1,4 @@
 from mobile.Appiumframework.Base.BasePage import BasePage
-
-
 class ContactForm(BasePage):
 
     def __init__(self, driver):

@@ -889,3 +889,16 @@
 02/25/2023 02:24:37 PM - LoginPage - INFO: Element not found with locator: commit and  locatorType: name
 02/25/2023 02:24:37 PM - LoginPage - INFO: Cannot click on the element with locator: commit locatorType: name
 02/25/2023 02:24:37 PM - Test_TC001_Login - ERROR: ****Login test failed ****
+03/02/2023 11:25:01 AM - Test_TC002_DDT_Login - INFO: ******* Starting Test_002_DDT_Login Test **********
+03/02/2023 11:25:01 AM - Test_TC002_DDT_Login - INFO: ******* Starting Login Set up **********
+03/02/2023 11:25:02 AM - Test_TC002_DDT_Login - ERROR: ******* Starting Login **********
+03/02/2023 11:25:13 AM - Test_TC002_DDT_Login - INFO: **** passed ****
+03/02/2023 11:25:23 AM - Test_TC002_DDT_Login - INFO: **** failed ****
+03/02/2023 11:25:34 AM - Test_TC002_DDT_Login - INFO: **** failed ****
+03/02/2023 11:25:45 AM - Test_TC002_DDT_Login - INFO: **** failed ****
+03/02/2023 11:25:46 AM - Test_TC002_DDT_Login - ERROR: ******* DDT Login test failed **********
+03/02/2023 11:28:50 AM - Test_TC02_LinkSmokeTest - INFO:  ====== WebDriver manager ======
+03/02/2023 11:28:50 AM - Test_TC02_LinkSmokeTest - INFO: Current google-chrome version is 94.0.4606
+03/02/2023 11:28:50 AM - Test_TC02_LinkSmokeTest - INFO: Get LATEST driver version for 94.0.4606
+03/02/2023 11:28:50 AM - Test_TC02_LinkSmokeTest - INFO: ****Started Login Test****
+03/02/2023 11:28:50 AM - Test_TC02_LinkSmokeTest - INFO:  ====== WebDriver manager ======

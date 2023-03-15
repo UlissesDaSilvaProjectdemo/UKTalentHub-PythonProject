@@ -12,12 +12,13 @@ class TrelloApiTest(unittest.TestCase):
     def setUp(self):
         self.board_id = self.create_board()
         list_id = self.create_list(self.board_id, name=" ChecKlist")
-        first_card_id = self.create_card(list_id, name="TEST_first_card_HUBTEST")
-        second_card_id = self.create_card(list_id, name="TEST_second_card_HUBTEST")
-        third_card_id = self.create_card(list_id, name="TEST_third_card_HUBTEST")
-        fifth_card_id = self.create_card(list_id, name=' TEST_fifith card HUB TEST ')
-        sixth_card = self.create_card(list_id, name="TEST_comment")
-        seventh_card = self.create_card(list_id, name="TEST_seven TEST comment")
+        first_card_id = self.create_card(list_id, name="first_card")
+        second_card_id = self.create_card(list_id, name="second_card")
+        third_card_id = self.create_card(list_id, name="third_card")
+        fifth_card_id = self.create_card(list_id, name='fifth_card_id')
+        sixth_card = self.create_card(list_id, name="sixth_card")
+        seventh_card = self.create_card(list_id, name="seventh_card")
+        UKTALENTHUB_card = self.create_card(list_id, name="UKTALENTHUB_card")
 
 
         self.edit_card(second_card_id, name="Edit second card", desc=' add a new description')
@@ -26,13 +27,14 @@ class TrelloApiTest(unittest.TestCase):
         self.add_comment_to_card(sixth_card, text="  New  Test comment")
         self.add_comment_to_card(seventh_card, text="  New  Test comment")
         self.edit_card(fifth_card_id, text="New  Card comment")
+        self.add_comment_to_card(UKTALENTHUB_card, text="UKTALENTHUB_card")
 
 
     def tearDown(self):
         self.delete_board(self.board_id)
 
     def test_something(self):
-        print('Api Hello')
+        print('Testing Trello API  Hello')
 
     def delete_board(self, board_id):  # DELETE /1/boards/{id}
         response = requests.put(f"https://api.trello.com/1/boards/{board_id}?key={API_KEY}&token={TOKEN}")

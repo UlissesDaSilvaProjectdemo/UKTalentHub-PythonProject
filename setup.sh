@@ -22,7 +22,8 @@ rem pytest -s -v  --html=.Reports/report.html testCases/TC004_RestAPI.py --brows
 
 echo "Running the BDD tests.."
 behave testCases/features/TC001_loginNegativePath.feature
-behave testCases/feature/TC002_trello_automation.feature
+behave testCases/features/TC002_trello_automation.feature
+behave testCases/features/TC003_QT_automation.feature
 behave testCases/selenium/TC001_selecct_dropdown.feature
 behave testCases/selenium/TC002_clickSendKeys.feature
 behave testCases/selenium/TC003_RadioButtonsAndCheckboxes.feature
@@ -52,6 +53,15 @@ rem pytest -s -v  --html=.Reports/report.html testCases/TestAPI009_POST_GetAuthT
 #---------mobile-----------------//
 rem C:\Users\Ulisses.Dasilva\UKTalentHub-PythonProject\mobile\Appiumframework\Test>
 rem py.test -v -s TC000_clickSearchBarTest.py
+
+#----Allure report-----
+rem Generate report open CMD
+rem allure serve /Users/Ulisses.Dasilva/Documents/allureRports/AppiumPyhtonlogs
+
+#---allure Rpeort Behave----
+rem C:\Users\Ulisses.Dasilva\UKTalentHub-PythonProject\.Reports\AllureReports
+
+rem behave -f allure_behave.formatter:AllureFormatter -o 'Reports\AllureReports' testCases/features/TC003_QT_automation.feature
 
 
 

@@ -16,10 +16,11 @@ class SearchBarTest(unittest.TestCase):
 
     @pytest.fixture(autouse=True)
     def classObjects(self):
-        log.info("----------- TEST Starting  Mobile Click Search Bar Test ------------- ")
+        log.info("----------- UK_TALENT_HUB - Starting  Mobile Click Search Bar Test ------------- ")
+        cl.allureLogs('TEST UK Click Mobile search abr logs')
         self.cf=clickSearchBar(self.driver)
 
-    @pytest.mark.run(order=1)
+    @pytest.mark.run()
     def test_opencontactForm(self):
         self.cf.clickSearchtFormBar()
 

@@ -1,8 +1,11 @@
+import allure
 import pytest
 
 
 
 def test_methodA():
+
+    allureLogs('test report')
     print("This is method A")
 
 
@@ -17,7 +20,10 @@ def test_methodC():
 
 def test_methodD():
     print("This is method D")
-    #assert False
+    assert False
 
 
+def allureLogs(text):
+    with allure.step(text):
+        pass
 

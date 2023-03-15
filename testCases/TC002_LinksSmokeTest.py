@@ -1,20 +1,17 @@
-
 import pytest
 from pageObjects.TC002_LinksSmokeTestPage import SmokeTest
 from utilities.readProperties import ReadConfig
 import utilities.custom_logger as cl
 import logging
-
-
-
 from allure_commons.types import AttachmentType
 import allure
 
-#@allure.description('Test allure report - allure.severity_level.NORMAL')
-#@allure.severity(severity_level="NORMAL")
+@allure.description('Test allure report - allure.severity_level.NORMAL')
+@allure.severity(severity_level="NORMAL")
 
 @pytest.mark.sanity
 @pytest.mark.regression
+
 class Test_TC02_LinkSmokeTest:
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUseremail()

@@ -8,6 +8,7 @@ class clickSearchBar(BasePage):
         self.driver = driver
 
     # Locators values in Contact us form
+    cl.allureLogs('Test Allure logs click Mobile search bar')
     _clickSearchtFormBar = "com.android.quicksearchbox:id/search_widget_text"  # ClassName
 
 
