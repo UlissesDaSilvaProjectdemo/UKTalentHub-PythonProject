@@ -1,10 +1,10 @@
-#UKTalentHUB
-============ 
-pyhton 3.10 
+# UKTalentHUB
 
-https://www.python.org/downloads/ 
-Download Windows embeddable package (64-bit)
-Download Windows installer (64-bit)
+## python 3.10 
+
+### https://www.python.org/downloads/ 
+1. Download Windows embeddable package (64-bit)
+2. Download Windows installer (64-bit)
 C:\Users\username
 
 ===========
@@ -24,10 +24,10 @@ Pycharm ---> File --> setting --> projectname -->Pyhton Interpeter--> set non-in
 
 --------------
 
-pip install selenium  :selinium libraries 
-pip install pytest : Unit Test framework 
-pip install pytest-html : PytestHtml report  
-pip install pytest-xdist : run test in parallel 
+1. pip install selenium  :selinium libraries 
+2. pip install pytest : Unit Test framework 
+3. pip install pytest-html : PytestHtml report  
+4.pip install pytest-xdist : run test in parallel 
 pip install Openpyxl : MS Excel Support  
 pip install Allure-pytest  to generate reports 
 pip install webdriver-manager 
